@@ -36,31 +36,7 @@ Puede verse una versión en vivo de este portafolio aquí:
 
 ## 📂 Estructura del Proyecto
 
-Personal-Portfolio/
-│
-├── index.html            # Página principal del portafolio (en inglés)
-├── index-sp.html         # Página principal del portafolio (en español)
-├── css/
-│   └── styles.css        # Hoja de estilos principal del proyecto
-├── js/
-│   └── script.js         # Archivo JavaScript (menú hamburguesa)
-├── assets/
-│   └── img/              # Carpeta para todas las imágenes del proyecto
-│       ├── logo.png
-│       ├── background.jpg
-│       ├── cloud1.png
-│       ├── sun.png
-│       ├── goals.png
-│       ├── (otras imágenes)
-│       └── sample.png     # Captura de pantalla del portafolio 
-│── online-en.html         # En construcción para mejora: Clases online en inglés
-├── online-sp.html         # En construcción para mejora: Clases online en español
-│── register.html          # En construcción para mejora: registro de alumnos
-├── repos-en.html          # En construcción para mejora: muestra completa de repositorios, en ingles
-├── repos-sp.html          # En construcción para mejora: muestra completa de repositorios, en español
-│── schedule.html          # En construcción para mejora: agenda para horarios de clases.
-└── README.md              # Este archivo
-
+![Estructura](assets/images/Estructura.png)
 ## Muestra del Portafolio
 
 ![Muestra del Portafolio](assets/images/sample.png)
