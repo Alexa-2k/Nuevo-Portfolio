@@ -35,8 +35,9 @@ Puede verse una versión en vivo de este portafolio aquí:
 * **(Opcional) JavaScript:** Utilizado para la funcionalidad del menú hamburguesa (mostrar/ocultar).
 
 ## 📂 Estructura del Proyecto
-
 ![Estructura](assets/images/Estructura.png)
+
+
 ## Muestra del Portafolio
 
 ![Muestra del Portafolio](assets/images/sample.png)
