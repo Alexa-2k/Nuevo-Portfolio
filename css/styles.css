@@ -916,12 +916,14 @@ footer {
 @media (max-width: 768px) {
 
   .top_cloud,
-  .bottom_cloud,
   .sun,
   .mountains {
     width: 150px;
   }
 
+  .bottom_cloud {
+  display: none;
+  }
   body {
     font-size: 15px;
     padding: 0 15px;
