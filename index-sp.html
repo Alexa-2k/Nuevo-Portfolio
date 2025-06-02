@@ -2,19 +2,21 @@
 <html lang="es" dir="ltr">
 
   <head>
-    <!-- META TAGS -->
+    <!----- META TAGS ------->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Lorena Rachich</title>
 
-    <!-- BOOTSTRAP CSS -->
+
+    <!------ BOOTSTRAP CSS ------>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- STYLE, ANIMATIONS & FONTS -->
+    <!-- ESTILO, FAVICON, ANIMACIONES & FUENTES -->
+    
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +26,17 @@
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+  
+  <!-------- CUERPO DE LA PÁGINA -------->
+  
+  <body>
+ 
+  <!--------------- PORTADA -------------->
   <header>
 
     <div class="fill top_container">
+
+<!-- ANIMACIÓN DE TEXTO E IMÁGENES DE PORTADA --->
 
       <img class="animate__animated animate__bounceInRight top_cloud" src="assets/images/cloud1.png" alt="cloud-img">
       <img class="animate__animated animate__bounceInLeft bottom_cloud" src="assets/images/cloud2.png" alt="cloud-img">
@@ -41,9 +51,10 @@
 
 
   </header>
-  <!-- CUERPO DE LA PAGINA -->
+  
+ 
 
-  <body>
+<!----------- MENU HAMBURGUESA ---------->
 
     <div class="topnav sticky">
 
@@ -58,16 +69,19 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#hobbies-container">Hobbies</a></li>
           <li><a href="online-en.html">Clases online</a></li>
-          <li><a href="#repositories">Muestra de Repositorios</a></li>
+          <li><a href="#repositories-main">Muestra de Repositorios</a></li>
           <li><a href="#contact-me">Contacto</a></li>
-          <!-- Registro para alumnos (a futuro)-->
+       
+        <!-- Registro para alumnos (a futuro)-->
           <li><a class="colorverde" href="register.html">Register / Login</a></li>
 
         </ul>
       </div> <!-- MyLinks-->
-
-
     </div> <!-- topnav sticky-->
+
+
+<!--------------- PERFIL PERSONAL -------------->
+
     <section class="middle-container ">
       <div class="profile flex-container">
 
@@ -77,6 +91,9 @@
           <img src="assets/images/circled anime 192.png" alt="Lore-anime-pic">
           <h3 class="intro">Soy Lore, </h3>
         </div> <!--I-am-->
+
+
+<!--------------- CAROUSEL PROFESIÓN ------------->
 
         <div class="carousel-inner" id="Lore-carousel">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -93,10 +110,12 @@
               <li data-target="#myCarousel" data-slide-to="7"></li>
             </ol>
 
-            <!-- Wrapper for slides -->
+
+<!--------------- IMÁGENES CAROUSEL ------------->
+
             <div class="carousel-inner " role="listbox">
               <div class="item active">
-                <img src="assets/images/fullstack developer2.jpg" alt="a FullStack developer.">
+                <img src="assets/images/fullstack developer2.jpg" alt="Desarrolladora web.">
 
                 <div class="carousel-caption">
                   <h3 class="carousel-text">desarrolladora web.</h3>
@@ -104,49 +123,49 @@
               </div> <!-- item-active-->
 
               <div class="item">
-                <img src="assets/images/qa-tester.jpg" alt="QA analyst">
+                <img src="assets/images/qa-tester.jpg" alt="Analista QA">
                 <div class="carousel-caption">
                   <h3 class="carousel-text">analista QA</h3>
                 </div> <!-- carousel-caption-->
               </div> <!-- item-->
 
               <div class="item">
-                <img src="assets/images/teach00.jpg" alt="Teacher">
+                <img src="assets/images/teach00.jpg" alt="Profe">
                 <div class="carousel-caption">
                   <h3 class="carousel-text">profesora</h3>
                 </div> <!-- carousel-caption-->
               </div> <!-- item-->
 
               <div class="item">
-                <img src="assets/images/data analyst.jpg" alt="a Data analyst">
+                <img src="assets/images/data analyst.jpg" alt="Analista de datos">
                 <div class="carousel-caption">
                   <h3 class="carousel-text">analista de datos</h3>
                 </div> <!-- carousel-caption-->
               </div> <!-- item-->
 
               <div class="item">
-                <img src="assets/images/eeng robot.png" alt="an Electronics Eng">
+                <img src="assets/images/eeng robot.png" alt="Ingeniera Electronica">
                 <div class="carousel-caption">
                   <h3 class="carousel-text">ingeniera electrónica</h3>
                 </div> <!-- carousel-caption-->
               </div> <!-- item-->
 
               <div class="item">
-                <img src="assets/images/Noche de Observatorio1.jpg" alt="Astronomer">
+                <img src="assets/images/Noche de Observatorio1.jpg" alt="Astrónoma">
                 <div class="carousel-caption">
                   <h3 class="carousel-text">astrónoma</h3>
                 </div> <!-- carousel-caption-->
               </div> <!-- item-->
 
               <div class="item">
-                <img src="assets/images/nomad3a.jpg" alt="a traveler">
+                <img src="assets/images/nomad3a.jpg" alt="Viajera">
                 <div class="carousel-caption">
                   <h3 class="carousel-text">viajera</h3>
                 </div> <!-- carousel-caption-->
               </div> <!-- item-->
 
               <div class="item">
-                <img src="assets/images/travel03a.jpg" alt="a nomad">
+                <img src="assets/images/travel03a.jpg" alt="Nómade">
                 <div class="carousel-caption">
                   <h3 class="carousel-text">nómade</h3>
                 </div> <!-- carousel-caption-->
@@ -154,7 +173,8 @@
 
             </div> <!--carousel inner list-->
 
-            <!-- Left and right controls -->
+<!---------- CONTROLES DE AVANCE CAROUSEL ---------->
+
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
               <span class="sr-only">Anterior</span>
@@ -168,7 +188,11 @@
       </div> <!-- div profile-->
     </section> <!-- section middle-->
 
-    <!-- ==== END OF CAROUSEL ==== -->
+
+<!----------------- FIN CAROUSEL ------------------>
+
+<!----------------- SOBRE MÍ - PÁRRAFO ------------------>
+
     <section class="about-me">
       <table class="about-me-table">
         <tr>
@@ -195,13 +219,18 @@
       </table>
     </section>
 
-    <!-- ==== DIVISOR ==== -->
+
+<!--------------------- DIVISOR ------------------>
+
     <div class="hr">
       <hr>
     </div>
 
-    <!-- ==== SKILLS SECTION ==== -->
+
+<!------------------ SECCIÓN HABILIDADES ---------->
+   
     <section id="skills">
+   
       <h2>Mis conocimientos.</h2>
 
       <div class="skills-container">
@@ -238,7 +267,10 @@
       </div>
     </section> <!--skills container -->
 
-    <!-- TECHNOLOGIES -->
+   
+   
+<!--------------- TABLA TECNOLOGIAS ------------------>
+
     <section id="technologies" class="tech-section">
       <h2>Tecnologías que manejo.</h2>
       <table class="tech-table">
@@ -279,11 +311,13 @@
       </table>
     </section>
 
-    <!-- ==== DIVISOR ==== -->
+
+<!--------------------- DIVISOR ------------------>
     <div class="hr">
       <hr>
     </div>
-    <!-- ==================== REPOS =============-->
+    
+<!--------- MUESTRA REPOSITORIOS EN GRID ---------->
 
     <section id="repositories-main">
     
@@ -494,15 +528,18 @@
         </div> <!-- repos main flex container -->
       </div><!--repos-contenedor-->
 
+
+<!--------------------- DIVISOR ------------------>
       <div class="hr">
         <hr>
       </div>
+</section> <!--repositories-main-->
 
-    </section> <!--repositories-main-->
 
-    <!-- ===============HOBBIES =================-->
 
-    <!-- Quiero animar esta parte con íconos que floten en la pantalla -->
+<!--------------------- HOBBIES ------------------>
+<!-- Quiero animar esta parte con íconos que floten en la pantalla -->
+
     <section id="hobbies-container">
       <div class="section-title">
         <h2>My Hobbies.</h2>
@@ -522,19 +559,24 @@
 
     </section> <!--hobbies-container-->
 
+
+<!--------------------- DIVISOR ------------------>
+
     <div class="hr">
       <hr>
     </div>
 
-    <!-- FORMULARIO DE CONTACTO -->
-    <!-- falta darle funcionalidad -->
+
+<!--------------- FORMULARIO DE CONTACTO --------->
+<!-- Falta darle funcionalidad -->
+
     <section class="contact-me" id="contact-me">
       <h2>¡Hablemos!</h2>
       <form>
-        <input class="form_field name" type="text" name="name" placeholder="Nombre" required><br><br>
-        <input class="form_field last_name" type="text" name="last_name" placeholder="Apellido" required><br><br>
-        <input class="form_field phone" type="tel" name="cellphone" placeholder="Celular"><br><br>
-        <input class="form_field email" type="email" name="email" placeholder="E-mail"><br><br>
+        <input class="form_field name" type="text" name="name" placeholder="Nombre" required>
+        <input class="form_field last_name" type="text" name="last_name" placeholder="Apellido" required>
+        <input class="form_field phone" type="tel" name="cellphone" placeholder="Celular">
+        <input class="form_field email" type="email" name="email" placeholder="E-mail">
 
         <section id="contact_type">
           <p>¿Cómo preferiría ser contactado?</p>
@@ -551,29 +593,32 @@
           <br><br>
         </section>
 
-        <textarea class="form_field message" name="message" placeholder="Mensaje"></textarea><br><br>
+        <textarea class="form_field message" name="message" placeholder="Mensaje"></textarea>
         <input class="form_btn" type="submit" name="Contact Me" value="Contacto">
         <input class="form_btn" type="reset" name="Borrar info" value="Reset">
       </form>
 
     </section>
 
-    <!-- PIE DE PAGINA -->
+
+<!------------------ PIE DE PAGINA -------------------->
     <footer>
 
-      <a href="https://www.linkedin.com/in/lorena-rachich/">
+      <a href="https://www.linkedin.com/in/lorena-rachich/" target="_blank">
         <img src="assets/images/linkedin.png" alt="LinkedIn"> </a>
 
-      <a href="https://twitter.com/Alexa_2k">
+      <a href="https://twitter.com/Alexa_2k" target="_blank">
         <img src="assets/images/x_logo.png" alt="Twitter">
       </a>
 
-      <a href="https://github.com/Alexa-2k">
+      <a href="https://github.com/Alexa-2k" target="_blank">
         <img src="assets/images/git.png" alt="Github"> </a>
       <p class="copyright-me">© 2024 Lorena Rachich.</p>
 
     </footer>
-    <!--contenedor-->
+
+
+<!--------------------- JAVASCRIPT ------------------>
 
     <script src="./js/script.js"></script>
   </body>

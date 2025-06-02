@@ -1,9 +1,12 @@
+/*================== RESET =================== */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+
+/*================== VARIABLES ================*/
 :root {
 
   --intro-bckgd-color: linear-gradient(135deg, #11CDD4 0%, #b8f2e6 30%, #E4F9F5 100%);
@@ -34,7 +37,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -100;
+  z-index: -10;
   /* Valor alto para que esté siempre encima */
 }
 
@@ -53,7 +56,7 @@ div {
   background-color: var(--main-bg-color);
 }
 
-/* ===== DOTTED LINE ===== */
+/* ================ DOTTED LINE ================ */
 hr {
   border: dotted white 8px;
   border-bottom: none;
@@ -67,7 +70,8 @@ hr {
   padding: 1rem;
 }
 
-/* ======================== */
+
+/* ================ GENERAL =================== */
 
 h1 {
   margin: 0 auto 0 auto;
@@ -83,7 +87,6 @@ h1 {
 
 h2 {
   font-family: var(--main-font);
-  /*font-size: 2.3rem;*/
   font-size: 3.5rem;
   color: var(--main-h1h2-color);
   font-weight: normal;
@@ -114,6 +117,8 @@ a:hover {
   color: var(--main-bg-color);
 }
 
+
+/* =========== FRONT PAGE & ANIMATIONS ========== */
 .fill,
 .top_container {
   background: var(--intro-bckgd-color);
@@ -126,7 +131,6 @@ a:hover {
   margin-bottom: 0;
 }
 
-/* ==== FRONT PAGE & ANIMATIONS === */
 .animate__animated {
   animation-duration: 6s;
   animation-delay: 0.1s;
@@ -195,7 +199,7 @@ a:hover {
 
 
 
-/* === HAMBURGER MENU === */
+/* ============== HAMBURGER MENU ============= */
 .topnav {
   position: fixed;
   top: 0;
@@ -208,7 +212,7 @@ a:hover {
 }
 
 
-/* HAMBURGER ICON */
+/* ============= HAMBURGER ICON ================ */
 .fa,
 .fa-bars {
   position: relative;
@@ -254,17 +258,9 @@ li a {
 }
 
 .topnav a:hover {
-  color: var(--main-bg-color);
+  color: lightgray;
   font-weight: bold;
 }
-
-/*.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: transparent !important;
-}
-*/
 
 .contact-me {
   position: relative;
@@ -307,6 +303,8 @@ nav a {
 }
 
 
+/*=====================  BODY ================*/
+
 .middle-container {
   min-height: 100vh;
   position: relative;
@@ -317,7 +315,6 @@ nav a {
   padding: 2rem;
   background: var(--transition-color);
 }
-
 
 
 .profile {
@@ -332,7 +329,8 @@ nav a {
 
 
 
-/* ====== CAROUSEL ====== */
+/* ================ CAROUSEL ================ */
+
 .carousel-control {
   overflow: visible;
   background-image: none !important;
@@ -455,7 +453,7 @@ nav a {
   text-align: left;
 }
 
-/* ======= SKILLS ======== */
+/* ================ SKILLS ================= */
 
 #skills {
   padding: 2rem 0;
@@ -519,7 +517,7 @@ nav a {
 
 
 
-/*__________________Technologies ____________________________*/
+/*================= TECHNOLOGIES ================*/
 #tech-section {
   background: var(--main-bg-color);
   padding: 4rem 5%;
@@ -575,10 +573,8 @@ nav a {
 
 
 
+/* ================== HOBBIES ================ */
 
-
-
-/* ====== HOBBIES ====== */
 #hobbies-container {
   position: relative;
   background-color: var(--main-bg-color);
@@ -607,8 +603,9 @@ nav a {
   color: var(--span-color);
 }
 
-/*===============================================================*/
-/*SECCION DE CONTACTO*/
+
+
+/* ==================== CONTACT =====================*/
 
 .contact-me h2 {
   margin: 3rem auto;
@@ -618,7 +615,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .form_field {
@@ -639,7 +636,6 @@ nav a {
   outline: none;
   border: 2px solid #66BFBF;
 }
-
 
 
 #contact_type {
@@ -671,7 +667,6 @@ nav a {
 
 .message {
   height: 10rem;
-
 }
 
 .form_btn {
@@ -701,7 +696,8 @@ nav a {
 
 
 
-/* ====== FOOTER ====== */
+/* ================== FOOTER =================== */
+
 footer {
   background-color: #000;
   position: relative;
@@ -721,7 +717,8 @@ footer {
   position: relative;
 }
 
-/* =========================== REPOS, ONLINE =================== */
+
+/* ======================= REPOS ===================== */
 
 #repositories-main {
   box-sizing: border-box;
@@ -747,14 +744,12 @@ footer {
   color: white;
 }
 
-
 .repos-main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
 }
-
 
 .repos-main::before {
   content: none !important;
@@ -782,37 +777,9 @@ footer {
   transition: 0.6s;
 }
 
-.repo-card1 {
-  height: 38rem;
-  min-width: 15%;
-  text-align: center;
-  border-style: solid;
-  border-width: 2px;
-  border-color: lightgray;
-  border-radius: 10px;
-  margin: 2%;
-  padding: 0;
-}
-
-.repo-img1 {
-  width: 80%;
-  margin: 0.5rem auto;
-}
-
 .online-img {
   width: 75%;
 }
-
-.card-img1 {
-  height: 30%;
-  margin: 0.5rem auto;
-}
-
-.card-title1 {
-  height: 6rem;
-  margin-top: 7rem;
-}
-
 
 .repo-img {
   width: 90%;
@@ -853,10 +820,12 @@ footer {
   font-size: 1.7rem;
 }
 
+
+/* ============= SECTIONS ==============*/
+
 #schedule {
   margin: 4rem auto;
 }
-
 
 #skills {
   position: relative;
@@ -881,7 +850,6 @@ footer {
   padding: 2rem 0;
 }
 
-
 .contact-me {
   position: relative;
   background-color: var(--main-bg-color);
@@ -889,9 +857,10 @@ footer {
 }
 
 
-/*======== MEDIA QUERIES ==========*/
 
-/* Tablet horizontal */
+/*=================== MEDIA QUERIES ================*/
+
+/*------ Tablet horizontal ------*/
 @media (max-width: 1080px) {
   body {
     font-size: 16px;
@@ -911,19 +880,17 @@ footer {
 }
 
 
-/*--- Tablet vertical ----*/
+/*------- Tablet vertical -------*/
 
 @media (max-width: 768px) {
 
   .top_cloud,
+  .bottom_cloud,
   .sun,
   .mountains {
     width: 150px;
   }
 
-  .bottom_cloud {
-  display: none;
-  }
   body {
     font-size: 15px;
     padding: 0 15px;
@@ -949,7 +916,8 @@ footer {
 }
 
 
-/* ---Mobil 1 ---*/
+/* -------- Mobile 1 ---------*/
+
 @media (max-width: 480px) {
 
   .top_cloud,
@@ -1003,7 +971,8 @@ footer {
 }
 
 
-/* ---Mobil 2 ---- */
+/*-------- Mobil 2 ---------*/
+
 @media (max-width: 375px) {
 
   .top_cloud,
@@ -1030,7 +999,6 @@ footer {
 
   h2 {
     font-size: 0.8rem;
-
   }
 
   .carousel img {
@@ -1042,4 +1010,16 @@ footer {
   nav ul {
     padding: 5px;
   }
+}
+
+
+/*=================== OTHER STYLES ==============*/
+.other {
+  width: 100%;
+  background-image: url(/assets/images/construccion-removebg-preview.png);
+  margin:0;
+  display: none;
+  position:relative;
+  background-color: var(--main-bg-color);
+  padding: 2rem 0;
 }

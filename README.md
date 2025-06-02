@@ -3,7 +3,7 @@
 Este proyecto es la implementación de la Práctica Formativa del curso de Desarrollo web FrontEnd, perteneciente a la currícula de la Tecnicatura Superior en Desarrollo de Software, del IFTS N°29 de CABA, que consistió en el desarrollo de un portafolio personal. El objetivo principal fue reforzar habilidades de desarrollo frontend, aplicando buenas prácticas de diseño y responsividad.
 
 Puede verse una versión en vivo de este portafolio aquí:
- https://Alexa-2k.github.io/Nuevo-Portfolio
+ https://Alexa-2k.github.io/Personal-Portfolio
  
  
 ## Características Principales

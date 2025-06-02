@@ -2,19 +2,21 @@
 <html lang="en" dir="ltr">
 
   <head>
-    <!-- META TAGS -->
+
+<!----- META TAGS ----->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Lorena Rachich</title>
 
-    <!-- BOOTSTRAP CSS -->
+<!-------------- BOOTSTRAP CSS ------------->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- STYLE, ANIMATIONS & FONTS -->
+<!-------- STYLE, ANIMATIONS & FONTS -------->
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,10 +27,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <!-- PORTADA -->
+<!--------------------- BODY -------------------->
+
+<body>
+
+<!-------------------- HEADER ------------------>
   <header>
 
     <div class="fill top_container">
+
+<!--------- IMAGES & TEXT ANIMATIONS ------------->
 
       <img class="animate__animated animate__bounceInRight top_cloud" src="assets/images/cloud1.png" alt="cloud-img">
       <img class="animate__animated animate__bounceInLeft bottom_cloud" src="assets/images/cloud2.png" alt="cloud-img">
@@ -43,7 +51,8 @@
 
   </header>
 
-  <body>
+
+<!--------------- HAMBURGER MENU ---------------->
     <div class="topnav sticky">
 
       <a href="javascript:void(0);" class="icon" onclick="showHide()">
@@ -57,15 +66,17 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#hobbies-container">Hobbies</a></li>
           <li><a href="online-en.html">Online classes</a></li>
-          <li><a href="#repositories">Repositories sample</a></li>
+          <li><a href="#repositories-main">Repositories sample</a></li>
           <li><a href="#contact-me">Contact</a></li>
           <li><a class="colorverde" href="register.html">Register / Login</a></li>
         </ul>
       </div> <!-- MyLinks-->
 
-
     </div> <!-- topnav sticky-->
     </section>
+
+
+<!--------------------- PROFILE ------------------>
 
     <section class="middle-container ">
       <div class="profile flex-container">
@@ -77,10 +88,13 @@
           <h3 class="intro">I am Lore, </h3>
         </div> <!--I-am-->
 
+
+<!---------------- PROFESSION CAROUSEL ---------------->
+
         <div class="carousel-inner" id="Lore-carousel">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-            <!-- Indicators -->
+<!--------------- Indicators -------------->
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -92,7 +106,7 @@
               <li data-target="#myCarousel" data-slide-to="7"></li>
             </ol>
 
-            <!-- Wrapper for slides -->
+<!--------- Wrapper for slides ----------->
             <div class="carousel-inner " role="listbox">
               <div class="item active">
                 <img src="assets/images/fullstack developer2.jpg" alt="a FullStack developer.">
@@ -150,10 +164,11 @@
                   <h3 class="carousel-text">a nomad</h3>
                 </div> <!-- carousel-caption-->
               </div> <!-- item-->
+          </div> <!--carousel inner list-->
 
-            </div> <!--carousel inner list-->
 
-            <!-- Left and right controls -->
+<!----- Left and right controls ------>
+ 
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
@@ -167,7 +182,10 @@
       </div> <!-- div profile-->
     </section> <!-- section middle-->
 
-    <!-- ==== END OF CAROUSEL ==== -->
+<!---------------- END OF CAROUSEL ------------->
+
+<!----------------- ABOUT ME TEXT --------------->
+
     <section class="about-me">
       <table class="about-me-table">
         <tr>
@@ -193,18 +211,20 @@
       </table>
     </section>
 
-    <!-- ==== DIVISOR ==== -->
+<!--------------------- DIVISOR ------------------>
     <div class="hr">
       <hr>
     </div>
 
-    <!-- ==== SKILLS SECTION ==== -->
+
+<!----------------- SKILLS TABLE ---------------->
     <section id="skills">
       <h2>My skills.</h2>
 
       <div class="skills-container">
         <div class="skill-item">
-          <img class="skill-img" src="assets/images/coding-circled.png" alt="coding image from https://www.flaticon.com">
+          <img class="skill-img" src="assets/images/coding-circled.png"
+            alt="coding image from https://www.flaticon.com">
           <div class="skill-content">
             <h3>Coding</h3>
             <p>HTML, CSS, JavaScript, Node.JS, React.JS, MySQL, PHP, Python, C#, C++, Java, Assembly.
@@ -222,19 +242,25 @@
         </div>
 
         <div class="skill-item">
-          <img class="skill-img" src="assets/images/maths medium.png" alt="School stickers created by Stickers - Flaticon">
+          <img class="skill-img" src="assets/images/maths medium.png"
+            alt="School stickers created by Stickers - Flaticon">
           <div class="skill-content">
             <h3>Teaching</h3>
             <p>I teach Mathematics, Physics, Chemistry, Astronomy, and Computer Science.</p>
           </div>
         </div>
       </div>
-      <div class="hr">
+
+     <div class="hr">
         <hr>
       </div>
+
     </section> <!--skills container -->
 
-    <!-- TECHNOLOGIES -->
+
+
+<!--------------- TECHNOLOGIES TABLE -------------->
+
     <section id="technologies" class="tech-section">
       <h2>Technologies I work with</h2>
       <table class="tech-table">
@@ -275,16 +301,18 @@
       </table>
     </section>
 
-    <!-- ==== DIVISOR ==== -->
+<!--------------------- DIVISOR ------------------>
     <div class="hr">
       <hr>
     </div>
-    <!-- ==================== REPOS =============-->
+
+
+<!---------- REPOSITORIES SAMPLE GRID ------------>
 
     <section id="repositories-main">
 
       <div id="repos-contenedor">
-       
+
         <div class="section-title">
           <h2>My repositories</h2>
           <h3 class="sample">
@@ -309,7 +337,6 @@
                   class="more">Repository</button></a>
             </div>
           </div>
-
 
           <div class="repo-card">
             <div class="card-img">
@@ -486,25 +513,28 @@
                   class="more">Repository</button></a>
             </div>
           </div>
-        </div> <!-- repos main flex container -->
+        </div> <!-- repos main container -->
       </div><!--repos-contenedor-->
+
+<!--------------------- DIVISOR ------------------>
 
       <div class="hr">
         <hr>
       </div>
-
     </section> <!--repositories-main-->
 
-    <!-- ===============HOBBIES =================-->
 
-    <!-- Quiero animar esta parte con íconos que floten en la pantalla -->
+<!-------------------- HOBBIES -------------------->
+<!-- I want to animate this section with icons floating around the screen in a spherical motion, using Canva. -->
+
     <section id="hobbies-container">
       <div class="section-title">
         <h2>My Hobbies.</h2>
       </div>
 
       <!-- Imágenes de mis hobbies -->
-      <img class="hobby-img" src="assets/images/telescope medium.png" alt=Telescope stickers created by Good Ware - Flaticon">
+      <img class="hobby-img" src="assets/images/telescope medium.png" alt=Telescope stickers created by Good Ware -
+        Flaticon">
       <img class="hobby-img" src="assets/images/baggage.png " alt="Travel icons created by Freepik - Flaticon ">
       <img class="hobby-img" src="assets/images/package-box.png" alt="Screwdriver icons created by srip - Flaticon">
       <img class="hobby-img" src="assets/images/gardening.png" alt=" Gardening icons created by Freepik - Flaticon">
@@ -516,12 +546,16 @@
         gardening, cooking, baking, and decorating cakes.</p>
     </section> <!--hobbies-container-->
 
+<!--------------------- DIVISOR ------------------>
     <div class="hr">
       <hr>
     </div>
 
-    <!-- FORMULARIO DE CONTACTO -->
-    <!-- falta darle funcionalidad -->
+
+<!------------------ CONTACT FORM ----------------->
+
+<!-- It still lacks functionality. -->
+
     <section class="contact-me" id="contact-me">
       <h2>Get In Touch!</h2>
       <form>
@@ -544,28 +578,29 @@
           </div>
         </section>
         <textarea class="form_field message" name="message" placeholder="Your message"></textarea>
-        <input class="form_btn" type="submit" name="Contact Me" value="Contact Me">
+        <button class="form_btn" type="button">Contact Me</button>
         <input class="form_btn" type="reset" name="Borrar info" value="Reset">
       </form>
     </section>
 
 
-    <!-- PIE DE PAGINA -->
-    <footer>
+<!-------------------- FOOTER ----------------->
+  <footer>
 
-      <a href="https://www.linkedin.com/in/lorena-rachich/">
+      <a href="https://www.linkedin.com/in/lorena-rachich/" target="_blank">
         <img src="assets/images/linkedin.png" alt="LinkedIn"> </a>
 
-      <a href="https://twitter.com/Alexa_2k">
+      <a href="https://twitter.com/Alexa_2k" target="_blank">
         <img src="assets/images/x_logo.png" alt="Twitter">
       </a>
 
-      <a href="https://github.com/Alexa-2k">
+      <a href="https://github.com/Alexa-2k" target="_blank">
         <img src="assets/images/git.png" alt="Github"> </a>
       <p class="copyright-me">© 2024 Lorena Rachich.</p>
 
-    </footer>
-    </section> <!--contenedor-->
+  </footer>
+
+<!--------------------- JAVASCRIPT ------------------>
 
     <script src="./js/script.js"></script>
   </body>
