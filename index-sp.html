@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+  <head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lorena Rachich</title>
+
+    <!-- BOOTSTRAP CSS -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- STYLE, ANIMATIONS & FONTS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <header>
+
+      <div class="fill top_container">
+
+        <img class="animate__animated animate__bounceInRight top_cloud" src="assets/images/cloud1.png" alt="cloud-img">
+        <img class="animate__animated animate__bounceInLeft bottom_cloud" src="assets/images/cloud2.png" alt="cloud-img">
+        <h1 class="animate__animated animate__bounceInDown">Soy Lore.</h1>
+        <h2 class="animate__animated animate__bounceInRight">una <span
+            class=" inblock animate__animated animate__bounceInUp, animate__rubberBand pro">pro</span> <span
+            class="inblock animate__animated animate__bounceInRight">gramadora.</span></h2>
+        <img class="animate__animated animate__bounceInUp sun" src="assets/images/sun.png" alt="sun-img">
+        <img class="mountains animate__animated animate__bounceInLeft" src="assets/images/goals.png" alt="mountain-img">
+
+      </div>
+
+     
+  </header>
+<!-- CUERPO DE LA PAGINA -->
+  <body>
+  
+  <div class="topnav sticky">
+  
+    <a href="javascript:void(0);" class="icon" onclick="showHide()">
+      <i class="fa fa-bars animate__animate animate__rotateIn"></i>
+    </a>
+    <div id="myLinks">
+      <ul>
+        <li><a href="index.html">Inicio <img src="assets/images/UKflag.png"> </a></li>
+        <li></li><a href="index-sp.html">Inicio <img src="assets/images/SPflag.png"></a></li>
+        <li><a href="#I-am">Quién soy</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies-container">Hobbies</a></li>
+        <li><a href="online-en.html">Clases online</a></li>
+        <li><a href="#repositories">Muestra de Repositorios</a></li>
+        <li><a href="#contact-me">Contacto</a></li>
+        <!-- Registro para alumnos (a futuro)-->
+        <li><a class="colorverde" href="register.html">Register / Login</a></li>
+  
+      </ul>
+    </div> <!-- MyLinks-->
+  
+  
+  </div> <!-- topnav sticky-->
+    <section class="middle-container ">
+      <div class="profile flex-container">
+
+        <div id="I-am">
+          <h2>Hola.</h2>
+          <h3 id="welcome">Bienvenidos a mi página personal</h3>
+          <img src="assets/images/circled anime 192.png" alt="Lore-anime-pic">
+          <h3 class="intro">Soy Lore, </h3>
+        </div> <!--I-am-->
+
+        <div class="carousel-inner" id="Lore-carousel">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner " role="listbox">
+              <div class="item active">
+                <img src="assets/images/fullstack developer2.jpg" alt="a FullStack developer.">
+
+                <div class="carousel-caption">
+                  <h3 class="carousel-text">desarrolladora web.</h3>
+                </div> <!-- carousel-caption-->
+              </div> <!-- item-active-->
+
+              <div class="item">
+                <img src="assets/images/qa-tester.jpg" alt="QA analyst">
+                <div class="carousel-caption">
+                  <h3 class="carousel-text">analista QA</h3>
+                </div> <!-- carousel-caption-->
+              </div> <!-- item-->
+
+              <div class="item">
+                <img src="assets/images/teach00.jpg" alt="Teacher">
+                <div class="carousel-caption">
+                  <h3 class="carousel-text">profesora</h3>
+                </div> <!-- carousel-caption-->
+              </div> <!-- item-->
+
+              <div class="item">
+                <img src="assets/images/data analyst.jpg" alt="a Data analyst">
+                <div class="carousel-caption">
+                  <h3 class="carousel-text">analista de datos</h3>
+                </div> <!-- carousel-caption-->
+              </div> <!-- item-->
+
+              <div class="item">
+                <img src="assets/images/eeng robot.png" alt="an Electronics Eng">
+                <div class="carousel-caption">
+                  <h3 class="carousel-text">ingeniera electrónica</h3>
+                </div> <!-- carousel-caption-->
+              </div> <!-- item-->
+
+              <div class="item">
+                <img src="assets/images/Noche de Observatorio1.jpg" alt="Astronomer">
+                <div class="carousel-caption">
+                  <h3 class="carousel-text">astrónoma</h3>
+                </div> <!-- carousel-caption-->
+              </div> <!-- item-->
+
+              <div class="item">
+                <img src="assets/images/nomad3a.jpg" alt="a traveler">
+                <div class="carousel-caption">
+                  <h3 class="carousel-text">viajera</h3>
+                </div> <!-- carousel-caption-->
+              </div> <!-- item-->
+
+              <div class="item">
+                <img src="assets/images/travel03a.jpg" alt="a nomad">
+                <div class="carousel-caption">
+                  <h3 class="carousel-text">nómade</h3>
+                </div> <!-- carousel-caption-->
+              </div> <!-- item-->
+
+            </div> <!--carousel inner list-->
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div> <!-- div my carousel-->
+        </div><!-- div carousel inner-->
+      </div> <!-- div profile-->
+    </section> <!-- section middle-->
+
+    <!-- ==== END OF CAROUSEL ==== -->
+    <section class="about-me">
+      <table class="about-me-table">
+        <tr>
+          <td>Mi nombre es Alejandra Lorena Rachich, pero me llaman Lore or Alexa.<br>
+            Soy una diseñadora web apasionada, con un background que amalgama ingeniería electrónica, astronomía y docencia.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Mi viaje profesional me ha llevado desde observar las estrellas hasta programar aplicaciones.<br>
+            Esta diversidad de experiencias me aporta una perspectiva apropiada<br>
+            para resolver problemas y crear soluciones innovadoras.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            He buscado y obtenido la oportunidad de trabajar desde diferentes lugares del mundo,<br>
+            o que me ha enseñado a adaptarme rápidamente a nuevos entornos y colaborar efectivamente con equipos multiculturales.
+          
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- ==== DIVISOR ==== -->
+    <div class="hr">
+      <hr>
+    </div>
+
+    <!-- ==== SKILLS SECTION ==== -->
+    <section id="skills">
+      <h2>Mis conocimientos.</h2>
+
+      <div class="skills-container">
+        <div class="skill-item">
+          <img class="skill-img" src="assets/images/coding-circled.png" alt="coding image from https://www.flaticon.com">
+          <div class="skill-content">
+            <h3>Programación</h3>
+            <p>HTML, CSS, JavaScript, Node.JS, React.JS, MySQL, PHP, Python, C#, C++, Java, Assembly.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <img class="skill-img" src="assets/images/languages.png" alt="Languages icons created by Freepik - Flaticon">
+          <div class="skill-content">
+            <h3>Idiomas</h3>
+            <p>El español es mi idioma nativo. hablo fluidamente inglés, portugués, italiano, comprendo francés, y estoy aprendiendo croata.</p>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <img class="skill-img" src="assets/images/maths medium.png" alt="School stickers created by Stickers - Flaticon">
+          <div class="skill-content">
+            <h3>Docencia</h3>
+            <p>Soy profe de Matemáticas, Física, Química, Astronomía elemental e Informática</p>
+          </div>
+        </div>
+      </div>
+      <div class="hr">
+        <hr>
+      </div>
+    </section> <!--skills container -->
+
+    <!-- TECHNOLOGIES -->
+    <section id="technologies" class="tech-section">
+      <h2>Tecnologías que manejo.</h2>
+      <table class="tech-table">
+        <thead>
+          <tr>
+            <th>Categoría</th>
+            <th>Tecnologías</th>
+            <th>Nivel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tech-category">Frontend</td>
+            <td>HTML5, CSS3, JavaScript <br> Android (Kotlin) </td>
+            <td>Intermedio</td>
+          </tr>
+          <tr>
+            <td class="tech-category">Backend</td>
+            <td>Node.js, PHP, Python</td>
+            <td>Intermedio</td>
+          </tr>
+          <tr>
+            <td class="tech-category">Databases</td>
+            <td>MongoDB, MySQL </td>
+            <td>Básico - Intermedio</td>
+          </tr>
+          <tr>
+            <td class="tech-category">Languages</td>
+            <td>C#, C++, Java, Assembly</td>
+            <td>Básico - Intermedio</td>
+          </tr>
+          <tr>
+            <td class="tech-category">Tools</td>
+            <td>Git, VS Code, VS, Figma, Jira, Trello, Android Studio</td>
+            <td>Intermedio</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ==== DIVISOR ==== -->
+    <div class="hr">
+      <hr>
+    </div>
+    <!-- ==================== REPOS =============-->
+
+    <section id="repositories-main">
+
+      <div id="repos-contenedor">
+        <a name="repositories"></a>
+        <div class="section-title">
+          <h2>Mis repositorios.</h2>
+          <h3 class="sample">Esta es una muestra. para verlos todos, por favor, haga <a href="./repos-en.html" class="pro2">click aquí
+          </h3>
+        </div>
+
+        <div class="repos-main flex container">
+          <div class="repo-card1">
+            <div class="card-img1">
+              <img class="repo-img1" src="assets/images/repos/conferencia.png">
+            </div>
+            <div class="card-title1">
+              <h3>Conferencia BA </h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt"> Práctica final de desarrollo web PHP - Codo a codo 2022. </p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/ConferenciaBA/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+
+
+          <div class="repo-card">
+            <div class="card-img">
+              <img class="repo-img" src="assets/images/repos/Batman.png">
+            </div>
+            <div class="card-title">
+              <h3> Batman</h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt"> JS Práctica 1 - Codo a codo React 2023. </p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/Batman/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+
+          <div class="repo-card">
+            <div class="card-img">
+              <img class="repo-img" src="assets/images/repos/JS-ej.png">
+            </div>
+            <div class="card-title">
+              <h3> JS - ejercicios</h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt"> Prácticas de JS volcadas a página web- Codo a codo 2022. </p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/Ejercicios-JS/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+
+          <div class="repo-card">
+            <div class="card-img">
+              <img class="repo-img" src="assets/images/repos/MiniAlura.png">
+            </div>
+            <div class="card-title">
+              <h3> Mini Alura</h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt"> Sitio responsive para plataforma de cursos online, basado en diseño provisto. Oracle</p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/Mini_Alura/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+
+          <div class="repo-card">
+            <div class="card-img">
+              <img class="repo-img" src="assets/images/repos/encriptador.png">
+            </div>
+            <div class="card-title">
+              <h3> Encriptador / Desencriptador</h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt"> Codificador de texto. Curso "Principiante en programacíón" Oracle Next Education </p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/Encriptador-ONE/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+
+          <div class="repo-card">
+            <div class="card-img">
+              <img class="repo-img" src="assets/images/repos/apeperia.png">
+            </div>
+            <div class="card-title">
+              <h3> Apeperia</h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt"> Archivos iniciales del proyecto Apeperia. Oracle ONE. </p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/Apeperia/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+
+          <div class="repo-card">
+            <div class="card-img">
+              <img class="repo-img" src="assets/images/repos/tasks-list.png">
+            </div>
+            <div class="card-title">
+              <h3> Task list</h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt"> Task list en JavaScript. "Manipulación del DOM". Oracle ONE. </p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/Task-list/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+
+          <div class="repo-card">
+            <div class="card-img">
+              <img class="repo-img" src="assets/images/repos/drumkit.png">
+            </div>
+            <div class="card-title">
+              <h3> Drumkit</h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt"> Drumkit project - DOM - Angela Yu Fullstack development course (Inglés)- Udemy</p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/Drumkit/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+
+          <div class="repo-card">
+            <div class="card-img">
+              <img class="repo-img" src="assets/images/repos/barberia.png">
+            </div>
+            <div class="card-title">
+              <h3> Barbería</h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt">Sitio web para barbería ficticia. Oracle ONE </p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/Barberia/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+
+          <div class="repo-card">
+            <div class="card-img">
+              <img class="repo-img" src="assets/images/repos/form.png">
+            </div>
+            <div class="card-title">
+              <h3> Formulario de registro en C#</h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt"> Formulario de registro para alumnos C# - POO - Tecnicatura superior en Desarrollo de Software </p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/Formingreso/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+
+          <div class="repo-card">
+            <div class="card-img">
+              <img class="repo-img" src="assets/images/repos/televisor.png">
+            </div>
+            <div class="card-title">
+              <h3> Control remoto de TV - C#</h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt"> POO en C# - B.S. Tecnicatura superior en Desarrollo de Software </p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/DSOO.A2.Televisor/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+
+          <div class="repo-card">
+            <div class="card-img">
+              <img class="repo-img" src="assets/images/repos/televisor.png">
+            </div>
+            <div class="card-title">
+              <h3> Compañía y empleados - C#</h3>
+            </div>
+            <div class="card-txt-div">
+              <p class="card-txt"> POO en C#. Simulación. ecnicatura superior en Desarrollo de Software</p>
+            </div>
+            <div>
+              <a href="https://github.com/Alexa-2k/Empresa/blob/main/README.md" target="_blank"> <button
+                  class="more">Repositorio</button></a>
+            </div>
+          </div>
+        </div> <!-- repos main flex container -->
+      </div><!--repos-contenedor-->
+
+      <div class="hr">
+        <hr>
+      </div>
+
+    </section> <!--repositories-main-->
+
+    <!-- ===============HOBBIES =================-->
+
+    <!-- Quiero animar esta parte con íconos que floten en la pantalla -->
+    <section id="hobbies-container">
+      <div class="section-title">
+        <h2>My Hobbies.</h2>
+      </div>
+
+      <!-- Imágenes de mis hobbies -->
+      <img class="hobby-img" src="assets/images/telescope medium.png" alt=Telescope stickers created by Good Ware - Flaticon">
+      <img class="hobby-img" src="assets/images/baggage.png " alt="Travel icons created by Freepik - Flaticon ">
+      <img class="hobby-img" src="assets/images/package-box.png" alt="Screwdriver icons created by srip - Flaticon">
+      <img class="hobby-img" src="assets/images/gardening.png" alt=" Gardening icons created by Freepik - Flaticon">
+      <img class="hobby-img" src="assets/images/cooking.png" alt=" Cooking icons created by mangsaabguru - Flaticon">
+      <img class="hobby-img" src="assets/images/cake-decoration.png" alt="Pastry icons created by Freepik - Flaticon">
+
+      <h3>Here's what I <span class="pro2">love </span> doing in my free time</h3>
+      <p class="hobbies-txt">Stargazing with my own telescopes, traveling, collecting tools and fixing things,
+        gardening, cooking, baking, and decorating cakes.</p>
+    </section> <!--hobbies-container-->
+
+    <div class="hr">
+      <hr>
+    </div>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <!-- falta darle funcionalidad -->
+    <section class="contact-me" id="contact-me">
+      <h2>¡Hablemos!</h2>
+      <form>
+        <input class="form_field name" type="text" name="name" placeholder="Nombre" required><br><br>
+        <input class="form_field last_name" type="text" name="last_name" placeholder="Apellido" required><br><br>
+        <input class="form_field phone" type="tel" name="cellphone" placeholder="Celular"><br><br>
+        <input class="form_field email" type="email" name="email" placeholder="E-mail"><br><br>
+
+        <section id="contact_type">
+          <p>¿Cómo preferiría ser contactado?</p>
+
+          <div class="radio-option">
+            <input type="radio" class="rd_mail" name="contact" value="email">
+            <label for="rd_mail">E-mail</label>
+          </div>
+
+          <div class="radio-option">
+            <input type="radio" class="rd_wap" name="contact" value="whatsapp">
+            <label for="rd_wap">WhatsApp</label>
+          </div>
+          <br><br>
+        </section>
+
+        <textarea class="form_field message" name="message" placeholder="Mensaje"></textarea><br><br>
+        <input class="form_btn" type="submit" name="Contact Me" value="Contacto">
+        <input class="form_btn" type="reset" name="Borrar info" value="Reset">
+      </form>
+
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+
+      <a href="https://www.linkedin.com/in/lorena-rachich/">
+        <img src="assets/images/linkedin.png" alt="LinkedIn"> </a>
+
+      <a href="https://twitter.com/Alexa_2k">
+        <img src="assets/images/x_logo.png" alt="Twitter">
+      </a>
+
+      <a href="https://github.com/Alexa-2k">
+        <img src="assets/images/git.png" alt="Github"> </a>
+      <p class="copyright-me">© 2024 Lorena Rachich.</p>
+
+    </footer>
+   <!--contenedor-->
+
+    <script src="./js/script.js"></script>
+  </body>
+
+</html>
