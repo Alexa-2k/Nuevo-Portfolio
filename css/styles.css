@@ -179,9 +179,6 @@ a:hover {
   margin-right: -8px;
 }
 
-
-
-
 .fill,
 .top_container {
   background: var(--intro-bckgd-color);
@@ -727,6 +724,7 @@ footer {
 /* =========================== REPOS, ONLINE =================== */
 
 #repositories-main {
+  box-sizing: border-box;
   position: relative;
   width: 100%;
   background-color: var(--main-bg-color);
@@ -743,27 +741,29 @@ footer {
 
 .section-title {
   position: relative;
-
-
 }
 
 .sample {
   color: white;
 }
 
+
 .repos-main {
-  position: relative;
-  width: 75%;
-  flex-direction: row;
-  /*overflow: auto;*/
-  display: flex;
-  overflow-x: auto;
-  min-height: 45rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+
+.repos-main::before {
+  content: none !important;
+  display: none !important;
 }
 
 .repo-card {
-  height: 38rem;
-  min-width: 25%;
+  height: 48rem;
+  /*  min-width: 15%;*/
   text-align: center;
   border-style: solid;
   border-width: 2px;
@@ -784,7 +784,7 @@ footer {
 
 .repo-card1 {
   height: 38rem;
-  min-width: 25%;
+  min-width: 15%;
   text-align: center;
   border-style: solid;
   border-width: 2px;
@@ -810,7 +810,7 @@ footer {
 
 .card-title1 {
   height: 6rem;
-  margin-top: 3rem;
+  margin-top: 7rem;
 }
 
 
@@ -837,7 +837,7 @@ footer {
 
 .card-title {
   height: 6rem;
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
 
 .more {
@@ -856,8 +856,6 @@ footer {
 #schedule {
   margin: 4rem auto;
 }
-
-
 
 
 #skills {
@@ -940,11 +938,11 @@ footer {
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.3em;
+    font-size: 1rem;
   }
 }
 
@@ -974,11 +972,15 @@ footer {
   }
 
   h1 {
-    font-size: 1.7em;
+    font-size: 1.7rem;
   }
 
   h2 {
-    font-size: 1.1em;
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 
   nav ul {
@@ -993,6 +995,9 @@ footer {
     display: flex;
     flex-direction: column;
   }
+     .carousel {
+       width: 100%;
+     }
 }
 
 
@@ -1014,17 +1019,24 @@ footer {
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+
   }
 
   .carousel img {
     height: auto;
   }
-
+ .carousel {
+   width: 90%;
+ }
   nav ul {
     padding: 5px;
   }
