@@ -38,7 +38,6 @@ header {
   left: 0;
   width: 100%;
   z-index: -10;
-  /* Valor alto para que esté siempre encima */
 }
 
 body {
@@ -49,7 +48,6 @@ body {
   box-sizing: border-box;
   position: relative;
   z-index: 2;
-
 }
 
 div {
@@ -114,7 +112,8 @@ a {
 }
 
 a:hover {
-  color: var(--main-bg-color);
+  color: #FFF;
+  font-weight: bold;
 }
 
 
@@ -129,7 +128,9 @@ a:hover {
   width: 100%;
   padding-bottom: 0;
   margin-bottom: 0;
-}
+  top: 0;
+  left: 0;
+ }
 
 .animate__animated {
   animation-duration: 6s;
@@ -182,21 +183,6 @@ a:hover {
   color: var(--span-color);
   margin-right: -8px;
 }
-
-.fill,
-.top_container {
-  background: var(--intro-bckgd-color);
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 100px;
-  text-align: center;
-  height: 100vh;
-  width: 100%;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
 
 
 /* ============== HAMBURGER MENU ============= */
@@ -911,7 +897,7 @@ footer {
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -997,11 +983,7 @@ footer {
     font-size: 1rem;
   }
 
-  h2 {
-    font-size: 0.8rem;
-  }
-
-  .carousel img {
+.carousel img {
     height: auto;
   }
  .carousel {
