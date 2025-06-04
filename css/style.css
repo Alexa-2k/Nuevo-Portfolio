@@ -344,12 +344,6 @@ nav a {
   vertical-align: baseline;
 }
 
-#myprofile {
-  position: relative;
-  width: 100%;
-}
-
-
 
 .item {
   vertical-align: -20%;
@@ -1105,10 +1099,10 @@ footer {
     width: 60%;
   }
 
-.top_cloud {
-  position: absolute;
-  top: 130px;
-  right: 180px;
+  .top_cloud {
+    position: absolute;
+    top: 130px;
+    right: 180px;
   }
 
   .bottom_cloud {
@@ -1231,8 +1225,7 @@ footer {
 
 }
 
-.class-card:hover
- {
+.class-card:hover {
   transform: scale(1.04);
   border-width: 3px;
   box-shadow: 5px 10px #888888;
