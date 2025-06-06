@@ -34,7 +34,7 @@ Puede verse una versión en vivo de este portafolio aquí:
 * **Animate.css:** Para animaciones de elementos en la carga inicial.
 * **(Opcional) JavaScript:** Utilizado para la funcionalidad del menú hamburguesa (mostrar/ocultar).
 
-##Nota:
+## Nota:
 * **Las páginas anexas, online-sp, online-en, schedule, register, repos_sp y repos-en están en desarrollo. No forman parte del trabajo práctico. Estoy ideando un proyecto personal a partir de este desarrollo. 
 
 ## 📂 Estructura del Proyecto
