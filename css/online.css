@@ -50,11 +50,11 @@
 
 
 .online-card {
-    flex: 0 1 22%;
-    /* o el ancho que te guste */
-    min-width: 20%;
-    max-width: 300px;
-    height: 30rem;
+    flex: 20%;
+    
+    min-width: 17%;
+    max-width: 21%;
+    height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
