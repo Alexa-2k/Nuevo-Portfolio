@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
     <!-- META TAGS -->
@@ -15,7 +15,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- STYLE & FONTS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/online.css">
     <link rel="favicon" href="assets/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,20 +28,22 @@
      <title>My repositories</title>
   </head>
 
- <body>
+ <body class="other">
   
   <header>
-     <img src="assets/images/Under_construction.png" alt="">
+      <div class="section-title">
+        <h2>My repositories</h2>
+      </div>
+
   </header>
    
-    <div class="topnav sticky">
+    <div class="topnav clases">
 
       <a href="javascript:void(0);" class="icon" onclick="showHide()">
         <i class="fa fa-bars animate__animate animate__rotateIn"></i>
       </a>
       <div id="myLinks">
-        <ul><br>
-          <li id="tope">. </li>
+        <ul>
           <li><a href="index.html">Home <img src="assets/images/UKflag.png"> </a></li>
           <li></li><a href="index-sp.html">Inicio <img src="assets/images/SPflag.png"></a></li>
           <li><a href="online-en.html">Online classes</a></li>
@@ -50,17 +53,11 @@
       </div>
     </div>
  
-  <section id="repositories-main">
-  
-  
-      <div class="section-title">
-        <h2>My repositories</h2>
-      </div>
-  
-      <div class="repos-main container">
-        <div class="repo-card">
+   
+      <section class="grid-container">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/conferencia.png">
+            <img class="online-img" src="assets/images/repos/conferencia.png">
           </div>
           <div class="card-title">
             <h3> Conferencia BA </h3>
@@ -75,9 +72,9 @@
         </div>
   
   
-        <div class="repo-card">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/Batman.png">
+            <img class="online-img" src="assets/images/repos/Batman.png">
           </div>
           <div class="card-title">
             <h3> Batman</h3>
@@ -91,9 +88,9 @@
           </div>
         </div>
   
-        <div class="repo-card">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/JS-ej.png">
+            <img class="online-img" src="assets/images/repos/JS-ej.png">
           </div>
           <div class="card-title">
             <h3> JS - ejercicios</h3>
@@ -107,9 +104,9 @@
           </div>
         </div>
   
-        <div class="repo-card">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/MiniAlura.png">
+            <img class="online-img" src="assets/images/repos/MiniAlura.png">
           </div>
           <div class="card-title">
             <h3> Mini Alura</h3>
@@ -124,12 +121,12 @@
           </div>
         </div>
   
-        <div class="repo-card">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/encriptador.png">
+            <img class="online-img" src="assets/images/repos/encriptador.png">
           </div>
           <div class="card-title">
-            <h3> Encriptador / Desencriptador</h3>
+            <h3> Encriptador</h3>
           </div>
           <div class="card-txt-div">
             <p class="card-txt"> Codificador de texto. Curso "Principiante en programacíón" Oracle Next Education </p>
@@ -140,9 +137,9 @@
           </div>
         </div>
   
-        <div class="repo-card">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/apeperia.png">
+            <img class="online-img" src="assets/images/repos/apeperia.png">
           </div>
           <div class="card-title">
             <h3> Apeperia</h3>
@@ -156,9 +153,9 @@
           </div>
         </div>
   
-        <div class="repo-card">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/tasks-list.png">
+            <img class="online-img" src="assets/images/repos/tasks-list.png">
           </div>
           <div class="card-title">
             <h3> Task list</h3>
@@ -172,9 +169,9 @@
           </div>
         </div>
   
-        <div class="repo-card">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/drumkit.png">
+            <img class="online-img" src="assets/images/repos/drumkit.png">
           </div>
           <div class="card-title">
             <h3> Drumkit</h3>
@@ -188,9 +185,9 @@
           </div>
         </div>
   
-        <div class="repo-card">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/barberia.png">
+            <img class="online-img" src="assets/images/repos/barberia.png">
           </div>
           <div class="card-title">
             <h3> Barbería</h3>
@@ -204,9 +201,9 @@
           </div>
         </div>
   
-        <div class="repo-card">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/form.png">
+            <img class="online-img" src="assets/images/repos/form.png">
           </div>
           <div class="card-title">
             <h3> Formulario de registro en C#</h3>
@@ -221,9 +218,9 @@
           </div>
         </div>
   
-        <div class="repo-card">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/televisor.png">
+            <img class="online-img" src="assets/images/repos/televisor.png">
           </div>
           <div class="card-title">
             <h3> Control remoto de TV - C#</h3>
@@ -237,9 +234,9 @@
           </div>
         </div>
   
-        <div class="repo-card">
+        <div class="online-card">
           <div class="card-img">
-            <img class="repo-img" src="assets/images/repos/televisor.png">
+            <img class="online-img" src="assets/images/repos/televisor.png">
           </div>
           <div class="card-title">
             <h3> Compañía y empleados - C#</h3>
@@ -252,15 +249,15 @@
                 class="more">Repositorio</button></a>
           </div>
         </div>
-      </div> <!-- repos main -->
+      </section> <!-- repos main -->
 
   
   
     <!--------------------- DIVISOR ------------------>
     <div class="hr">
       <hr>
-    </div>
-  </section> <!--repositories-main-->
+    
+  </section> <!--grid-container-->
    
     <script src="js/script.js"></script>
   </body>
