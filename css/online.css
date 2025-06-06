@@ -6,7 +6,7 @@
 }
 
 .clases {
-    background: var(--main-bg-color) !important;
+    background: transparent!important;
 }
 
 #online-main {
@@ -127,9 +127,8 @@
 
 @media screen and (max-width: 992px) {
     .online-card {
-        flex: 1 1 calc(45% - 2rem);
-        /* 2 por fila */
-        max-width: calc(45% - 2rem);
+        flex: 1 1 calc(25% - 2rem);
+        max-width: calc(25% - 2rem);
     }
 }
 
