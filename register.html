@@ -18,8 +18,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- STYLE, ANIMATIONS & FONTS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="favicon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/online.css">
+    <link rel="icon" href="assets/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -29,14 +30,12 @@
     <title>Registro</title>
   </head>
   <header>
-    <div>
-      <img src="assets/images/Under_construction.png">
-    </div>
+    
   </header>
 
-  <body>
+  <body class="other">
 
-    <div class="topnav sticky">
+    <div class="topnav clases">
       <a href="javascript:void(0);" class="icon" onclick="showHide()">
         <i class="fa fa-bars animate__animate animate__rotateIn"></i>
       </a>
@@ -48,12 +47,22 @@
           <li><a href="index.html#contact-me">Contacto</a></li>
           <li><a class="colorverde" href="register.html">Register / Login</a></li>
         </ul>
-
       </div>
-
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-
     </div>
+
+<section class="contact-me" id="contact-me">
+  <h2>Registro de alumno / Student Register</h2>
+  <form>
+    <input class="form_field name" type="text" name="name" placeholder="Nombre / Name" required>
+    <input class="form_field last_name" type="text" name="last_name" placeholder="Apellido / Last name" required>
+    <input class="form_field phone" type="tel" name="cellphone" placeholder="Nro de celular / Cell number">
+    <input class="form_field email" type="email" name="email" placeholder="E-mail">
+
+    <button class="form_btn" type="button">Register</button>
+    <input class="form_btn" type="reset" name="Borrar info" value="Reset">
+  </form>
+</section>
+
 
 
     <script src="./js/script.js"></script>
