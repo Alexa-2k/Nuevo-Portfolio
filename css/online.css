@@ -24,6 +24,7 @@
 
 }
 
+
 .grid-container {
     display: flex;
     flex-wrap: wrap;
@@ -50,11 +51,11 @@
 
 
 .online-card {
-    flex: 20%;
-    
-    min-width: 17%;
-    max-width: 21%;
-    height: 35rem;
+    flex: 1 1 calc(25% - 2rem);
+    /* Hasta 4 por fila con gap incluido */
+    max-width: calc(25% - 2rem);
+    min-width: 260px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,7 +64,10 @@
     border-radius: 10px;
     padding: 0.5rem;
     background-color: transparent;
+    box-sizing: border-box;
 }
+
+
 
 
 .online-card:hover{    
@@ -75,9 +79,11 @@
 
 
 .online-img {
-    width: 75%;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
 }
-
 
 .card-img {
     height: 40%;
@@ -116,4 +122,21 @@
 
 #schedule {
     margin: 4rem auto;
+}
+
+
+@media screen and (max-width: 992px) {
+    .online-card {
+        flex: 1 1 calc(45% - 2rem);
+        /* 2 por fila */
+        max-width: calc(45% - 2rem);
+    }
+}
+
+/* Responsive para móviles */
+@media screen and (max-width: 600px) {
+    .online-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
