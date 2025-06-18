@@ -425,14 +425,17 @@ nav a {
   padding: 1rem;
   vertical-align: top;
   text-align: left;
+  white-space: pre-line;
 }
 
 .about-me-table tr:nth-child(2) td {
   text-align: right;
+  white-space: pre-line;
 }
 
 .about-me-table tr:nth-child(3) td {
   text-align: left;
+  white-space: pre-line;
 }
 
 /* ================ SKILLS ================= */
