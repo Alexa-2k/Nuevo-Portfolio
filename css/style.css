@@ -228,7 +228,7 @@ li a {
 
 .topnav a {
   text-align: left;
-  color: white;
+  color: #000;
   padding: 0;
   text-decoration: none;
   font-size: 15px;
@@ -245,14 +245,37 @@ li a {
 }
 
 .topnav a:hover {
-  color: lightgray;
+  color: var(--h3-color);
   font-weight: bold;
 }
 
 .contact-me {
   position: relative;
-
 }
+
+#myLinks.open {
+  display: block;
+  background-color: white !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 0 10px 10px;
+  width: 200px;
+}
+
+/* Ícono hamburguesa con fondo blanco cuando está abierto */
+.topnav a.icon.open {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  color: var(--h3-color)
+}
+
+/* Ícono hamburguesa cerrado (fondo transparente por defecto) */
+.topnav a.icon {
+  background-color: transparent;
+  color: #FFF;
+  padding: 5px;
+}
+
 
 /* ==== ORIGINAL HORIZONTAL NAV BAR (just in case) ======= */
 /*nav { 
@@ -334,6 +357,8 @@ nav a {
   width: 100%;
 }
 
+/* ================ CAROUSEL ================ */
+
 .carousel-control {
   overflow: visible;
   background-image: none !important;
@@ -343,6 +368,110 @@ nav a {
 .intro {
   text-align: right;
   vertical-align: baseline;
+}
+
+#myprofile {
+  position: relative;
+  width: 100%;
+}
+
+.item {
+  vertical-align: -20%;
+  padding: 0;
+  margin: 0;
+}
+
+.item img {
+  max-height: 620px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  color: grey;
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  padding: 0;
+  /*transform: translateY(-100%);*/
+}
+
+.carousel-text {
+  color: var(--h3-color);
+  width: fit-content;
+}
+
+.carousel-indicators {
+  width: 20%;
+  position: absolute;
+  bottom: 15%;
+  left: 40%;
+  margin: 0;
+  display: inline-block;
+}
+
+#I-am {
+  width: 30%;
+  height: 100%;
+  vertical-align: baseline;
+  display: inline-block;
+  position: relative;
+  line-height: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  background-color: transparent !important;
+}
+
+#I-am h2 {
+  margin-bottom: 1.5rem;
+  color: #08667d;
+}
+
+#welcome {
+  color: #08667d;
+}
+
+#I-am h3 {
+  margin-bottom: 2.5rem auto;
+}
+
+#I-am img {
+  margin: 1.5rem auto;
+}
+
+.about-me {
+  background-color: black;
+  padding: 2rem;
+}
+
+.about-me-table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: black;
+  font-family: var(--main-font);
+  color: #EAF6F6;
+  font-size: medium;
+  font-weight: lighter;
+  line-height: 2;
+}
+
+.about-me-table td {
+  padding: 1rem;
+  vertical-align: top;
+  text-align: left;
+  white-space: pre-line;
+}
+
+.about-me-table tr:nth-child(2) td {
+  text-align: right;
+  white-space: pre-line;
+}
+
+.about-me-table tr:nth-child(3) td {
+  text-align: left;
+  white-space: pre-line;
 }
 
 
@@ -948,6 +1077,11 @@ footer {
   .carousel {
     max-width: 95%;
   }
+ 
+ .carousel-inner img {
+   max-height: 180px;
+ }
+ 
 
   .carousel-indicators {
     display: none;
@@ -1021,6 +1155,10 @@ footer {
     padding: 0 10px;
   }
 
+ .carousel-inner img {
+   max-height: 120px;
+ }
+ 
   .parallax {
     background-attachment: scroll;
     background-position: center;
