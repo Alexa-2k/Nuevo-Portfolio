@@ -769,6 +769,7 @@ footer {
 
 .online-img {
   width: 75%;
+  border-radius: 10px;
 }
 
 .repo-img {
@@ -778,6 +779,7 @@ footer {
 .card-img {
   height: 40%;
   margin: 3% auto;
+  border-radius: 10px;
 }
 
 .card-txt-div {
@@ -802,9 +804,13 @@ footer {
   border-color: var(--glow-color);
   color: var(--glow-color);
   font-family: "Helvetica lightweight", sans-serif;
-  padding: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 2rem;
+  box-shadow: rgb(8, 102, 125, 0.8) 5px 5px ;
 }
 
+ 
 .btn {
   margin: 5% auto;
   font-size: 1.7rem;

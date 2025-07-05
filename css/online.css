@@ -83,11 +83,13 @@
     max-width: 200px;
     height: auto;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 .card-img {
     height: 40%;
     margin: 3% auto;
+    border-radius: 10px
 }
 
 .card-txt-div {
@@ -107,13 +109,14 @@
     margin-top: 1rem;
 }
 
-.more {
+/* .more {
     background-color: transparent;
     border-color: var(--glow-color);
     color: var(--glow-color);
     font-family: "Helvetica lightweight", sans-serif;
     padding: 0.5rem;
-}
+    border-radius: 10px;
+} */
 
 .btn {
     margin: 5% auto;
