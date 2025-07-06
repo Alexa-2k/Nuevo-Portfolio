@@ -210,7 +210,7 @@ a:hover {
 .topnav #myLinks {
   display: none;
   background-color: transparent !important;
-  
+
 }
 
 ul {
@@ -238,10 +238,12 @@ li a {
 }
 
 .topnav a.icon {
-
   position: relative;
   float: left;
   font-size: 20px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 5px;
 }
 
 .topnav a:hover {
@@ -269,12 +271,6 @@ li a {
   color: var(--h3-color)
 }
 
-/* Ícono hamburguesa cerrado (fondo transparente por defecto) */
-.topnav a.icon {
-  background-color: transparent;
-  color: #FFF;
-  padding: 5px;
-}
 
 
 /* ==== ORIGINAL HORIZONTAL NAV BAR (just in case) ======= */
@@ -337,27 +333,59 @@ nav a {
   background-color: transparent !important;
 }
 
-
-
-/* ================ CAROUSEL ================ */
-
-.carousel-control {
-  overflow: visible;
-  background-image: none !important;
-
-}
-
-.intro {
-  text-align: right;
+#I-am {
+  width: 30%;
+  height: 100%;
   vertical-align: baseline;
+  display: inline-block;
+  position: relative;
+  line-height: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  background-color: transparent !important;
 }
 
-#myprofile {
-  position: relative;
-  width: 100%;
+#I-am h2 {
+  margin-bottom: 1.5rem;
+  color: #08667d;
+}
+
+#welcome {
+  color: #08667d;
+}
+
+#I-am h3 {
+  margin-bottom: 2.5rem auto;
+}
+
+#I-am img {
+  margin: 1.5rem auto;
 }
 
 /* ================ CAROUSEL ================ */
+
+.carousel-caption {
+  color: grey;
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  padding: 0;
+  /*transform: translateY(-100%);*/
+}
+
+.carousel-text {
+  color: var(--h3-color);
+  width: fit-content;
+}
+
+.carousel-indicators {
+  width: 20%;
+  position: absolute;
+  bottom: 15%;
+  left: 40%;
+  margin: 0;
+  display: inline-block;
+}
 
 .carousel-control {
   overflow: visible;
@@ -388,58 +416,6 @@ nav a {
   margin: 0 auto;
 }
 
-.carousel-caption {
-  color: grey;
-  position: absolute;
-  left: 0%;
-  bottom: 0;
-  padding: 0;
-  /*transform: translateY(-100%);*/
-}
-
-.carousel-text {
-  color: var(--h3-color);
-  width: fit-content;
-}
-
-.carousel-indicators {
-  width: 20%;
-  position: absolute;
-  bottom: 15%;
-  left: 40%;
-  margin: 0;
-  display: inline-block;
-}
-
-#I-am {
-  width: 30%;
-  height: 100%;
-  vertical-align: baseline;
-  display: inline-block;
-  position: relative;
-  line-height: 2rem;
-  padding-top: 2rem;
-  text-align: center;
-  background-color: transparent !important;
-}
-
-#I-am h2 {
-  margin-bottom: 1.5rem;
-  color: #08667d;
-}
-
-#welcome {
-  color: #08667d;
-}
-
-#I-am h3 {
-  margin-bottom: 2.5rem auto;
-}
-
-#I-am img {
-  margin: 1.5rem auto;
-}
-
 .about-me {
   background-color: black;
   padding: 2rem;
@@ -464,98 +440,6 @@ nav a {
   white-space: pre-line;
 }
 
-.about-me-table tr:nth-child(2) td {
-  text-align: right;
-  white-space: pre-line;
-}
-
-.about-me-table tr:nth-child(3) td {
-  text-align: left;
-  white-space: pre-line;
-}
-
-
-.item {
-  vertical-align: -20%;
-  padding: 0;
-  margin: 0;
-}
-
-.carousel-caption {
-  color: grey;
-  position: absolute;
-  left: 0%;
-  bottom: 0;
-  padding: 0;
-  /*transform: translateY(-100%);*/
-}
-
-.carousel-text {
-  color: var(--h3-color);
-  width: fit-content;
-}
-
-.carousel-indicators {
-  width: 20%;
-  position: absolute;
-  bottom: 15%;
-  left: 40%;
-  margin: 0;
-  display: inline-block;
-}
-
-#I-am {
-  width: 30%;
-  height: 100%;
-  vertical-align: baseline;
-  display: inline-block;
-  position: relative;
-  line-height: 2rem;
-  padding-top: 2rem;
-  text-align: center;
-  background-color: transparent !important;
-}
-
-#I-am h2 {
-  margin-bottom: 1.5rem;
-  color: #08667d;
-}
-
-#welcome {
-  color: #08667d;
-}
-
-#I-am h3 {
-  margin-bottom: 2.5rem auto;
-}
-
-#I-am img {
-  margin: 1.5rem auto;
-}
-
-.about-me {
-  background-color: black;
-  padding: 2rem;
-}
-
-.about-me-table {
-  width: 70%;
-  border-collapse: collapse;
-  margin: 0 auto;
-  background-color: black;
-  font-family: var(--main-font);
-  color: #EAF6F6;
-  font-size: medium;
-  font-weight: lighter;
-  line-height: 2;
-}
-
-.about-me-table td {
-  padding: 1rem;
-  vertical-align: top;
-  text-align: left;
-  white-space: pre-line;
-}
 
 .about-me-table tr:nth-child(2) td {
   text-align: right;
@@ -566,6 +450,7 @@ nav a {
   text-align: left;
   white-space: pre-line;
 }
+
 
 /* ================ SKILLS ================= */
 
@@ -855,13 +740,12 @@ footer {
   position: relative;
   width: 80%;
   margin-left: 10%;
-  }
+}
 
 .sample {
   color: white;
-  
-}
 
+}
 
 .repos-main {
   display: grid;
@@ -936,10 +820,10 @@ footer {
   padding: 1rem;
   border-radius: 8px;
   font-size: 2rem;
-  box-shadow: rgb(8, 102, 125, 0.8) 5px 5px ;
+  box-shadow: rgb(8, 102, 125, 0.8) 5px 5px;
 }
 
- 
+
 .btn {
   margin: 5% auto;
   font-size: 1.7rem;
@@ -1021,10 +905,6 @@ footer {
     width: fit-content;
   }
 
-  .carousel-indicators {
-    display: none;
-  }
-
   .contact-me form {
     width: 80%;
     margin: auto;
@@ -1077,11 +957,11 @@ footer {
   .carousel {
     max-width: 95%;
   }
- 
- .carousel-inner img {
-   max-height: 180px;
- }
- 
+
+  .carousel-inner img {
+    max-height: 180px;
+  }
+
 
   .carousel-indicators {
     display: none;
@@ -1155,10 +1035,10 @@ footer {
     padding: 0 10px;
   }
 
- .carousel-inner img {
-   max-height: 120px;
- }
- 
+  .carousel-inner img {
+    max-height: 120px;
+  }
+
   .parallax {
     background-attachment: scroll;
     background-position: center;
@@ -1332,6 +1212,3 @@ footer {
 
 
 }
-
-
-
