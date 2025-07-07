@@ -60,7 +60,7 @@ hr {
   border-bottom: none;
   display: block;
   width: 4%;
-  margin: 45px auto;
+  margin: 3rem auto;
   background-color: var(--main-bg-color) !important;
 }
 
@@ -744,7 +744,7 @@ footer {
 
 .sample {
   color: white;
-
+  margin: 5rem auto
 }
 
 .repos-main {
