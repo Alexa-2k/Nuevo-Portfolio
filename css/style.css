@@ -9,6 +9,8 @@
 /*================== VARIABLES ================*/
 :root {
 
+  /*===== Colors =====*/
+
   --intro-bckgd-color: linear-gradient(135deg, #11CDD4 0%, #b8f2e6 30%, #E4F9F5 100%);
   --inv-bckgd-color: linear-gradient(135deg, #e4f9f5 0%, #b8f2e6 30%, hsl(186 100% 69%) 100%);
   --main-bg-color: #000;
@@ -21,7 +23,6 @@
   /*--glow-color: hsl(186 100% 69%);*/
   --dark-mode-color: #000;
   --a-font-color: #E4F9F5;
-  --main-font: 'Montserrat', 'Helvetica', 'sans-serif';
   --transition-color: linear-gradient(180deg,
       #E4F9F5 0%,
       #a8d5d1 15%,
@@ -29,6 +30,14 @@
       #2d4a49 45%,
       #000000 60%,
       #000000 100%);
+  --color-gray: #222;
+
+
+  /* ==== FONTS ==== */
+  --main-font: 'Montserrat', 'Helvetica', 'sans-serif';
+  --title-font: 'Sacramento', 'cursive';
+  --font-size-base: 2rem;
+
 }
 
 .main-header {
@@ -48,6 +57,7 @@ body {
   box-sizing: border-box;
   position: relative;
   z-index: 2;
+  font-size: var(--font-size-base);
 }
 
 div {
@@ -77,7 +87,7 @@ h1 {
   border: 0;
   padding-bottom: 0;
   padding-top: 0;
-  font-family: 'Sacramento', cursive;
+  font-family: var(--title-font);
   font-weight: bolder;
   z-index: 3;
   font-size: 9rem;
@@ -98,10 +108,10 @@ h3 {
 
 p {
   line-height: 2;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--main-font);
   color: #EAF6F6;
-  font-size: medium;
-  font-weight: lighter;
+  font-size: var(--font-size-base);
+  font-weight: normal;
 }
 
 a {
@@ -117,6 +127,10 @@ a:hover {
   font-weight: bold;
 }
 
+td {
+  font-size: var(--font-size-base);
+  font-family: var(--main-font);
+}
 
 /* =========== FRONT PAGE & ANIMATIONS ========== */
 .fill,
@@ -422,7 +436,7 @@ nav a {
 }
 
 .about-me-table {
-  width: 70%;
+  width: 80%;
   border-collapse: collapse;
   margin: 0 auto;
   background-color: black;
@@ -436,6 +450,7 @@ nav a {
 .about-me-table td {
   padding: 1rem;
   vertical-align: top;
+  font-family: var(--main-font);
   text-align: left;
   white-space: pre-line;
 }
@@ -515,13 +530,10 @@ nav a {
 }
 
 
-
 /*================= TECHNOLOGIES ================*/
 #tech-section {
   background: var(--main-bg-color);
   padding: 4rem 5%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   margin: 2rem 0;
   z-index: 2;
 }
@@ -536,33 +548,36 @@ nav a {
 }
 
 .tech-table th {
-  background: linear-gradient(135deg, #66BFBF, #11999E);
-  color: white;
+  color: #666;
   padding: 1rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: left;
 }
 
 .tech-table td {
   padding: 1rem;
   text-align: left;
-  border-bottom: 1px solid #eee;
+  /*border-bottom: 1px solid #eee;*/
+}
+
+.tech-description {
+  color: #eee;
 }
 
 .tech-table tr:nth-child(even) {
-  background: #f8fdfc;
-  background-color: #bbb
+  background: transparent;
 }
 
 .tech-table tr:nth-child(odd) {
-  background: #ddd;
+  background: transparent;
 }
 
 .tech-table tr:hover {
-  background: #e4f9f5;
+  background:#444;
   transform: scale(1.02);
   transition: all 0.3s ease;
-}
+  }
+
 
 .tech-category {
   font-weight: bold;
@@ -570,6 +585,10 @@ nav a {
   width: 25%;
 }
 
+/*.tech-table th:hover {
+  background: linear-gradient(135deg, #66BFBF, #11999E);
+  color: #ddd;
+}*/
 
 
 /* ================== HOBBIES ================ */
@@ -1117,7 +1136,7 @@ footer {
 }
 
 
-/*-------- Mobil 2 ---------*/
+/*-------- Mobile 2 ---------*/
 
 @media (max-width: 375px) {
 
