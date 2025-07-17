@@ -10,11 +10,36 @@
   }
 
 
-// function showHide() {
-// 	let x = document.getElementById("myLinks");
-// 	if (x.style.display === "block") {
-// 		x.style.display = "none";
-// 	} else {
-// 		x.style.display = "block";
-// 	}
-// }
+const toggle = document.getElementById('toggle-mode');
+const sol = document.querySelector('.sun');
+
+// Función para aplicar el modo visual
+function aplicarModo(oscuro) {
+  document.body.classList.toggle('dark-mode', oscuro);
+  document.body.classList.toggle('light-mode', !oscuro);
+  sol.src = oscuro ? '../assets/images/Moon.png' : '../assets/images/sun.png';
+  toggle.checked = oscuro;
+}
+
+// Leer preferencia guardada o usar la del sistema
+let modoGuardado = localStorage.getItem('dark-mode');
+let modoOscuro = modoGuardado !== null 
+  ? modoGuardado === 'true'
+  : window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+// Aplicar al cargar
+aplicarModo(modoOscuro);
+
+toggle.addEventListener("change", () => {
+	modoOscuro = toggle.checked;
+	localStorage.setItem("dark-mode", modoOscuro);
+	location.reload(); // 🔁 Recarga la página
+});
+
+
+// // Cambiar cuando se usa el switch
+// toggle.addEventListener('change', () => {
+//   modoOscuro = toggle.checked;
+//   localStorage.setItem('dark-mode', modoOscuro);
+//   aplicarModo(modoOscuro);
+// });
