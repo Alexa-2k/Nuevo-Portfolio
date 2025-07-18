@@ -11,12 +11,20 @@
 
   /*===== Colors =====*/
 
-  --intro-bckgd-color: linear-gradient(135deg, #11CDD4 0%, #b8f2e6 30%, #E4F9F5 100%);
-  --inv-bckgd-color: linear-gradient(135deg, #e4f9f5 0%, #b8f2e6 30%, hsl(186 100% 69%) 100%);
+  --intro-bckgd-color: linear-gradient(135deg, #11CDD4D9 0%, #b8f2e6D9 30%, #E4F9F5D9 100%), url(../assets/images/white-noise.jpg);
+ --intro-till-color: url(../assets/images/fondo_lindo.png);
+ 
+  --inv-bckgd-color: linear-gradient(315deg, #11CDD4D9 0%, #b8f2e6D9 30%, #E4F9F5D9 100%), url(../assets/images/white-noise.jpg);
+  --light-bckgd-color: linear-gradient(-135deg, #11CDD4D9 0%, #b8f2e6D9 30%, #E4F9F5D9 100%),url(../assets/images/white-noise.jpg);
+
+  /*(135deg, #e4f9f5 0%, #b8f2e6 30%, #11CDD4 100%);*/
+  --dark-mode-gradient: linear-gradient(to bottom, #333333d9,#000000d9), url(../assets/images/bckgd.jpg);
+  --dark-mode-inverse: linear-gradient(to top, #333333d9, #000000d9), url(../assets/images/bckgd.jpg);
   --main-bg-color: #000;
   --main-lite-color:#b8f2e6;
-  --main-h1h2-color: #66BFBF;
+  --main-h1h2-color: #11CDD4/*#66BFBF*/;
   --h3-color: #11CDD4;
+  --h3-light-mode-color:#08777d;
   /*--h3-color: #11999E;*/
   --span-color: #FFA1A1;
   --old-btn-color: #11CDD4;
@@ -24,6 +32,10 @@
   /*--glow-color: hsl(186 100% 69%);*/
   --dark-mode-color: #000;
   --a-font-color: #E4F9F5;
+  --shadow: 0 8px 15px rgba(240, 240, 240, 0.7);
+  --btn-shadow: 0 8px 15px rgb(8, 102, 125, 0.8) ;
+  --lite-mode-shadow: 0 8px 15px rgba(100, 100, 100, 0.7);
+  
   --transition-color: linear-gradient(180deg,
       #E4F9F5 0%,
       #a8d5d1 15%,
@@ -37,7 +49,7 @@
   /* ==== FONTS ==== */
   --main-font: 'Montserrat', 'Helvetica', 'sans-serif';
   --title-font: 'Sacramento', 'cursive';
-  --font-size-base: 2rem;
+  --font-size-base: 1.8rem;
 
 }
 
@@ -67,7 +79,7 @@ hr {
   display: block;
   width: 4%;
   margin: 3rem auto;
-/*  background-color: var(--main-bg-color) !important;*/
+
 }
 
 .hr {
@@ -77,20 +89,47 @@ hr {
 
 /*================ DARK MODE ====================*/
 body.dark-mode {
-  color: #EAF6F6;
+  color: var(--main-lite-color)
 }
 
 /* Cambia el color del texto de párrafos y tablas en modo oscuro */
 body.dark-mode p,
 body.dark-mode td {
-  color: #EAF6F6;
+  color: whitesmoke;
 }
 
 /* Estilo para el HR en modo oscuro */
 body.dark-mode hr {
   border-color: lightgray;
- 
+  background-color: transparent;
 }
+
+body.dark-mode .top_container {
+  background-image: url(../assets/images/Sirius_by_M_Ribas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body.dark-mode .middle-container,
+body.dark-mode #skills,
+body.dark-mode #repositories-main,
+body.dark-mode .contact-me {
+  background: var(--dark-mode-gradient);
+}
+
+body.dark-mode #hobbies-container,
+body.dark-mode #technologies,
+body.dark-mode .about-me {
+  background: var(--dark-mode-inverse);
+}
+
+body.dark-mode .skill-item {
+  background-color: var(--dark-mode-color);
+}
+
+body.dark-mode footer { 
+  background: var(--dark-mode-color);
+ }
 
 /*================ LIGHT MODE ====================*/
 
@@ -100,13 +139,90 @@ body.light-mode td {
   color: var(--color-gray);
 }
 
+body.light-mode .middle-container h2
+ {
+  color: var(--h3-light-mode-color);
+}
+
 /* Estilo para el HR en modo claro */
 body.light-mode hr {
   border-color: var(--color-gray);
+  background-color: var(--main-lite-color);
 }
+
+/*body.light-mode .top_container,
+body.light-mode .middle-container,
+body.light-mode #skills,
+body.light-mode #technologies, 
+body.light-mode #hobbies-container,
+body.light-mode .about-me,
+body.light-mode .contact-me,
+body.light-mode footer  {
+  background: linear-gradient(135deg, #11CDD4 0%, #b8f2e6 30%, #E4F9F5 100%);
+}*/
+
+body.light-mode .middle-container, 
+body.light-mode .about-me, 
+body.light-mode #technologies,
+body.light-mode .tech-table
+{
+  background-color:#FFF;
+}
+
+/*body.light-mode .middle-container,*/
+body.light-mode #skills,
+body.light-mode .contact-me {
+  background: var(--inv-bckgd-color);
+}
+
+body.light-mode #hobbies-container
+ {
+  background: var(--light-bckgd-color);
+}
+
+body.light-mode .tech-table {
+  box-shadow: var(--lite-mode-shadow);
+}
+
+body.light-mode .tech-table th {
+  background: linear-gradient(135deg, #66BFBF, #11999E);
+  color:#FFF;
+}
+
+body.light-mode .tech-table td {
+  border-bottom: 1px solid #eee;
+}
+
+body.light-mode .tech-table tr:nth-child(even) {
+  background: #f8fdfc;
+  background-color: #bbb
+}
+
+body.light-mode .tech-table tr:nth-child(odd) {
+  background: #ddd;
+}
+
+body.light-mode .tech-table tr:hover {
+  background: #e4f9f5;
+  
+}
+
+body.light-mode .tech-category {
+  color: #11999E;
+}
+
+
+
+body.light-mode #repositories-main {
+  background: darkgray;
+}
+
 
 /* =========== FRONT PAGE & ANIMATIONS ========== */
 .top_container {
+  /* background:var(--intro-bckgd-color); */
+  background-image: var(--intro-till-color);
+  background-size: cover;
   position: fixed;
   padding-top: 100px;
   text-align: center;
@@ -118,17 +234,6 @@ body.light-mode hr {
   left: 0;
 }
 
-/* APLICA EL FONDO AL HEADER SEGÚN EL MODO */
-body.light-mode .top_container  {
-  background: linear-gradient(135deg, #11CDD4 0%, #b8f2e6 30%, #E4F9F5 100%);
-  
-}
-
-body.dark-mode .top_container  {
-  background-image: url(../assets/images/Sirius_by_M_Ribas.jpg);
-  background-size: cover;
-  background-position: center;
-}
 
 /* ================ GENERAL =================== */
 
@@ -159,7 +264,6 @@ h3 {
 p {
   line-height: 2;
   font-family: var(--main-font);
-  /* color: #EAF6F6; */
   font-size: var(--font-size-base);
   font-weight: normal;
 }
@@ -196,16 +300,6 @@ td {
   left: 0;
 }
 
-/* .top_container .light-mode {
-  background: var(--intro-bckgd-color);
-} */
-
-/* .top_container .dark-mode {
-/*background-image: url(../assets/images/Magallanes_by_E_Scharberger.jpg); */
-/*  background-image: url(../assets/images/Sirius_by_M_Ribas.jpg);
-
-}
- */
 .animate__animated {
   animation-duration: 6s;
   animation-delay: 0.1s;
@@ -261,9 +355,8 @@ td {
 /* ========== TOGGLE SWITCH ========== */
 .switch {
   position: fixed;
-    top: 0;
-    right: 0;
-  /*  position: relative;*/
+  top: 0;
+  right: 0;
   display: inline-block;
   width: 60px;
   height: 34px;
@@ -304,7 +397,9 @@ td {
 
 /* Activado */
 input:checked+.slider {
-  background-color: #2196F3;
+  background-color: gray;
+  /* #2196F3;*/
+  background-image: 🌞🌙;
 }
 
 input:checked+.slider::before {
@@ -448,13 +543,14 @@ nav a {
 
 .middle-container {
   min-height: 100vh;
+  max-width:90%;
   position: relative;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   z-index: 3;
   padding: 2rem;
   padding: 2rem;
-  background: var(--transition-color);
 }
 
 
@@ -480,13 +576,9 @@ nav a {
   background-color: transparent !important;
 }
 
-#I-am h2 {
+#I-am h2, #welcome {
   margin-bottom: 1.5rem;
-  color: #08667d;
-}
-
-#welcome {
-  color: #08667d;
+  color: var(--h3-color);
 }
 
 #I-am h3 {
@@ -552,17 +644,17 @@ nav a {
 }
 
 .about-me {
-  background-color: black;
   padding: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .about-me-table {
   width: 80%;
   border-collapse: collapse;
   margin: 0 auto;
-  background-color: black;
   font-family: var(--main-font);
-  color: #EAF6F6;
+  color: whitesmoke;
   font-size: medium;
   font-weight: lighter;
   line-height: 2;
@@ -592,6 +684,8 @@ nav a {
 
 #skills {
   padding: 2rem 0;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .skills-container {
@@ -607,10 +701,9 @@ nav a {
 .skill-item {
   display: flex;
   align-items: center;
+  background-color: whitesmoke;
   gap: 2rem;
-  background-color: transparent;
   padding: 2rem;
-
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(100, 100, 100, 0.5);
   transition: all 0.3s ease;
@@ -618,11 +711,10 @@ nav a {
 
 .skill-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(240, 240, 240, 0.7);
+  box-shadow: var(--shadow);
 }
 
 .skill-item:nth-child(even) {
-
   flex-direction: row-reverse;
 }
 
@@ -642,7 +734,7 @@ nav a {
 
 .skill-content h3 {
   margin: 0 0 1rem 0;
-  color: #a8d5d1;
+
 }
 
 .skill-content p {
@@ -652,10 +744,10 @@ nav a {
 
 
 /*================= TECHNOLOGIES ================*/
-#tech-section {
-  background: var(--main-bg-color);
+#technologies {
+  max-width: 90%;
   padding: 4rem 5%;
-  margin: 2rem 0;
+  margin: 0 auto;
   z-index: 2;
 }
 
@@ -665,7 +757,7 @@ nav a {
   border-collapse: collapse;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px rgba(240, 240, 240, 0.2);
 }
 
 .tech-table th {
@@ -706,17 +798,15 @@ nav a {
   width: 25%;
 }
 
-/*.tech-table th:hover {
-  background: linear-gradient(135deg, #66BFBF, #11999E);
-  color: #ddd;
-}*/
+
 
 
 /* ================== HOBBIES ================ */
 
 #hobbies-container {
+  max-width: 90%;
   position: relative;
-  background-color: var(--main-bg-color);
+  margin: 0 auto;
   z-index: 3;
   padding: 2rem 0;
 }
@@ -745,6 +835,12 @@ nav a {
 
 
 /* ==================== CONTACT =====================*/
+
+.contact-me {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 1%;
+}
 
 .contact-me h2 {
   margin: 3rem auto;
@@ -828,17 +924,13 @@ nav a {
 
 }
 
-.contact-me {
-  background-color: #000;
-  padding-top: 1%;
-}
-
 
 
 /* ================== FOOTER =================== */
 
 footer {
-  background-color: #000;
+  max-width: 90%;
+  margin: 0 auto;
   position: relative;
   padding: 5%;
 }
@@ -863,8 +955,8 @@ footer {
 #repositories-main {
   box-sizing: border-box;
   position: relative;
-  width: 100%;
-  background-color: var(--main-bg-color);
+  max-width: 90%;
+  margin: 0 auto;
   z-index: 3;
 }
 
@@ -872,7 +964,7 @@ footer {
   position: relative;
   width: 100%;
   z-index: 3;
-  background-color: var(--main-bg-color);
+  background-color: transparent;
 
 }
 
@@ -916,7 +1008,7 @@ footer {
 .repo-card1:hover {
   transform: scale(1.04);
   border-width: 3px;
-  box-shadow: 5px 10px #888888;
+  box-shadow: var(--shadow);
   transition: 0.6s;
 }
 
@@ -960,7 +1052,7 @@ footer {
   padding: 1rem;
   border-radius: 8px;
   font-size: 2rem;
-  box-shadow: rgb(8, 102, 125, 0.8) 5px 5px;
+  box-shadow: var(--btn-shadow);
 }
 
 
