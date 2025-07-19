@@ -30,10 +30,13 @@
   <!-------- CUERPO DE LA PÁGINA -------->
 
   <body>
-    <label class="switch">
-      <input type="checkbox" class="toggle-mode">
-      <span class="slider"></span>
-    </label>
+    <div class="switch">
+      <label for="toggle-mode">
+        🌞🌙
+        <input type="checkbox" id="toggle-mode">
+        <span class="slider"></span>
+      </label>
+    </div>
 
     <!--------------- PORTADA -------------->
     <header class="main-header">
@@ -54,10 +57,7 @@
 
       </div>
 
-
     </header>
-
-
 
     <!----------- MENU HAMBURGUESA ---------->
     <!-- Falta modularizar con JS (lo estoy aprendiendo) -->
@@ -221,12 +221,12 @@
           </td>
         </tr>
       </table>
-    </section>
 
+    </section>
 
     <!--------------------- DIVISOR ------------------>
 
-    <div class="hr">
+    <div class="hr" id="skills-hr">
       <hr>
     </div>
 
@@ -266,17 +266,53 @@
           </div>
         </div>
       </div>
-      <div class="hr">
-        <hr>
-      </div>
+
     </section> <!--skills container -->
 
+    <!--------------------- DIVISOR ------------------>
+
+    <div class="hr" id="tech-hr">
+      <hr>
+    </div>
 
 
-    <!--------------- TABLA TECNOLOGIAS ------------------>
+    <!--------------- SECCIÓN TECNOLOGIAS ------------------>
 
     <section id="technologies" class="tech-section">
       <h2>Tecnologías que manejo.</h2>
+
+      <div id="myCanvasContainer">
+        <canvas width="600" height="500" id="myCanvas">
+          <div id="tags">
+            <ul>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/html80.png"></a></li>
+              <li><a href="#technologies" target="_blank"> <img src="./assets/images/techs/CSS80.png"></a></li>
+              <li><a href="#technologies" target="_blank"> <img src="./assets/images/techs/JS80.png"></a></li>
+              <li><a href="#technologies" target="_blank"> <img src="./assets/images/techs/python-logo80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/mongoDB80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img
+                    src="./assets/images/techs/Android_Studio_Logo80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/bootstrap80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/c80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/figma.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/git.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/github80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/java.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/Jira80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/Kotlin.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/vsc.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/MySQL80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/php.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/react80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/trello.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/VS.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/node.png"></a></li>
+
+            </ul>
+          </div>
+        </canvas>
+      </div> <!-- MyCanvascontainer-->
+
       <table class="tech-table">
         <thead>
           <tr>
@@ -313,11 +349,11 @@
           </tr>
         </tbody>
       </table>
+
     </section>
 
-
     <!--------------------- DIVISOR ------------------>
-    <div class="hr">
+    <div class="hr" class="repo-hr">
       <hr>
     </div>
 
@@ -582,25 +618,20 @@
                   class="more">Repository</button></a>
             </div>
           </div>
-        </div> <!-- repos main container -->
+        </div>
       </div><!--repos-contenedor-->
+      </div><!-- repos main container -->
 
-
-      </div> <!-- repos main flex container -->
-      </div><!--repos-contenedor-->
-
-
-      <!--------------------- DIVISOR ------------------>
-      <div class="hr">
-        <hr>
-      </div>
     </section> <!--repositories-main-->
 
-
+    <!--------------------- DIVISOR ------------------>
+    
+    <div class="hr" id="hobbies-hr">
+      <hr>
+    </div>
 
     <!--------------------- HOBBIES ------------------>
-    <!-- Quiero animar esta parte con íconos que floten en la pantalla. Tengo el script. No lo agregué porque excede el contenido de la materia y no es propio -->
-
+  
     <section id="hobbies-container">
       <div class="section-title">
         <h2>Mis Hobbies.</h2>
@@ -625,7 +656,7 @@
 
     <!--------------------- DIVISOR ------------------>
 
-    <div class="hr">
+    <div class="hr" id="contact-hr">
       <hr>
     </div>
 
@@ -684,6 +715,8 @@
     <!--------------------- JAVASCRIPT ------------------>
 
     <script src="./js/script.js"></script>
+    <script src="./js/tagcanvas.js"></script>
+    <script src="./js/tagcanvas.min.js"></script>
   </body>
 
 </html>

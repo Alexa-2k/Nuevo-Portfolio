@@ -12,19 +12,20 @@
   /*===== Colors =====*/
 
   --intro-bckgd-color: linear-gradient(135deg, #11CDD4D9 0%, #b8f2e6D9 30%, #E4F9F5D9 100%), url(../assets/images/white-noise.jpg);
- --intro-till-color: url(../assets/images/fondo_lindo.png);
- 
-  --inv-bckgd-color: linear-gradient(315deg, #11CDD4D9 0%, #b8f2e6D9 30%, #E4F9F5D9 100%), url(../assets/images/white-noise.jpg);
-  --light-bckgd-color: linear-gradient(-135deg, #11CDD4D9 0%, #b8f2e6D9 30%, #E4F9F5D9 100%),url(../assets/images/white-noise.jpg);
+  --intro-till: url(../assets/images/fondo_lindo.png);
 
-  /*(135deg, #e4f9f5 0%, #b8f2e6 30%, #11CDD4 100%);*/
-  --dark-mode-gradient: linear-gradient(to bottom, #333333d9,#000000d9), url(../assets/images/bckgd.jpg);
+  --inv-bckgd-color: linear-gradient(to top, #b8f2e6D9 , #E4F9F5D9 ), url(../assets/images/white-noise.jpg);
+  --light-bckgd-color: linear-gradient(to bottom, #b8f2e6D9 , #E4F9F5D9 ), url(../assets/images/white-noise.jpg);
+
+  --dark-mode-gradient: linear-gradient(to bottom, #333333d9, #000000d9), url(../assets/images/bckgd.jpg);
   --dark-mode-inverse: linear-gradient(to top, #333333d9, #000000d9), url(../assets/images/bckgd.jpg);
   --main-bg-color: #000;
-  --main-lite-color:#b8f2e6;
-  --main-h1h2-color: #11CDD4/*#66BFBF*/;
+  --main-lite-color: #b8f2e6;
+  --main-h1h2-color: #11CDD4
+    /*#66BFBF*/
+  ;
   --h3-color: #11CDD4;
-  --h3-light-mode-color:#08777d;
+  --h3-light-mode-color: #08777d;
   /*--h3-color: #11999E;*/
   --span-color: #FFA1A1;
   --old-btn-color: #11CDD4;
@@ -33,9 +34,9 @@
   --dark-mode-color: #000;
   --a-font-color: #E4F9F5;
   --shadow: 0 8px 15px rgba(240, 240, 240, 0.7);
-  --btn-shadow: 0 8px 15px rgb(8, 102, 125, 0.8) ;
+  --btn-shadow: 0 8px 15px rgb(8, 102, 125, 0.8);
   --lite-mode-shadow: 0 8px 15px rgba(100, 100, 100, 0.7);
-  
+
   --transition-color: linear-gradient(180deg,
       #E4F9F5 0%,
       #a8d5d1 15%,
@@ -74,7 +75,7 @@ body {
 
 /* ================ DOTTED LINE ================ */
 hr {
-  border: dotted white 8px;
+  border: dotted lightgray 8px;
   border-bottom: none;
   display: block;
   width: 4%;
@@ -84,7 +85,8 @@ hr {
 
 .hr {
   padding: 1rem;
-
+  margin: 0 auto;
+  z-index: 10;
 }
 
 /*================ DARK MODE ====================*/
@@ -98,14 +100,8 @@ body.dark-mode td {
   color: whitesmoke;
 }
 
-/* Estilo para el HR en modo oscuro */
-body.dark-mode hr {
-  border-color: lightgray;
-  background-color: transparent;
-}
-
 body.dark-mode .top_container {
-  background-image: url(../assets/images/Sirius_by_M_Ribas.jpg);
+  background-image: url(../assets/images/Sirius.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -119,7 +115,8 @@ body.dark-mode .contact-me {
 
 body.dark-mode #hobbies-container,
 body.dark-mode #technologies,
-body.dark-mode .about-me {
+body.dark-mode .about-me,
+body.dark-mode footer {
   background: var(--dark-mode-inverse);
 }
 
@@ -127,9 +124,9 @@ body.dark-mode .skill-item {
   background-color: var(--dark-mode-color);
 }
 
-body.dark-mode footer { 
+body.dark-mode footer {
   background: var(--dark-mode-color);
- }
+}
 
 /*================ LIGHT MODE ====================*/
 
@@ -139,45 +136,62 @@ body.light-mode td {
   color: var(--color-gray);
 }
 
-body.light-mode .middle-container h2
+body.light-mode .programmer {
+  color: var(--main-h1h2-color);
+} 
+
+body.light-mode h3 {
+  color: #666;
+}
+
+body.light-mode h2,
+
+body.light-mode #I-am h2,
+body.light-mode #I-am h3
  {
-  color: var(--h3-light-mode-color);
+  color: #c9b278;
 }
 
-/* Estilo para el HR en modo claro */
-body.light-mode hr {
-  border-color: var(--color-gray);
-  background-color: var(--main-lite-color);
+body.light-mode .top_container {
+  background: var(--intro-till);
+  background-size: cover;
+  background-position: center;
 }
 
-/*body.light-mode .top_container,
 body.light-mode .middle-container,
 body.light-mode #skills,
-body.light-mode #technologies, 
-body.light-mode #hobbies-container,
-body.light-mode .about-me,
+body.light-mode #repositories-main,
 body.light-mode .contact-me,
-body.light-mode footer  {
-  background: linear-gradient(135deg, #11CDD4 0%, #b8f2e6 30%, #E4F9F5 100%);
-}*/
-
-body.light-mode .middle-container, 
-body.light-mode .about-me, 
+body.light-mode .tech-table,
 body.light-mode #technologies,
-body.light-mode .tech-table
-{
-  background-color:#FFF;
+body.light-mode #hobbies-container {
+  background: #FFF;
 }
 
-/*body.light-mode .middle-container,*/
-body.light-mode #skills,
-body.light-mode .contact-me {
-  background: var(--inv-bckgd-color);
+body.light-mode .about-me {
+  background: url(../assets/images/Foto_oficina.png);
+  padding: 10rem 0;
+  
 }
 
-body.light-mode #hobbies-container
- {
-  background: var(--light-bckgd-color);
+body.light-mode .about-me-table {
+
+background-color: #c9b278a2;
+}
+
+
+body.light-mode .about-me-table #about-me-middle_text{
+  color:#fff;
+  font-weight: 400;
+  
+}
+
+
+
+body.light-mode footer {
+  background: lightgray;
+  /*url(../assets/images/bckgd.jpg)*/
+  ;
 }
 
 body.light-mode .tech-table {
@@ -186,7 +200,7 @@ body.light-mode .tech-table {
 
 body.light-mode .tech-table th {
   background: linear-gradient(135deg, #66BFBF, #11999E);
-  color:#FFF;
+  color: #FFF;
 }
 
 body.light-mode .tech-table td {
@@ -203,8 +217,7 @@ body.light-mode .tech-table tr:nth-child(odd) {
 }
 
 body.light-mode .tech-table tr:hover {
-  background: #e4f9f5;
-  
+  background: var(--a-font-color);
 }
 
 body.light-mode .tech-category {
@@ -212,17 +225,8 @@ body.light-mode .tech-category {
 }
 
 
-
-body.light-mode #repositories-main {
-  background: darkgray;
-}
-
-
 /* =========== FRONT PAGE & ANIMATIONS ========== */
 .top_container {
-  /* background:var(--intro-bckgd-color); */
-  background-image: var(--intro-till-color);
-  background-size: cover;
   position: fixed;
   padding-top: 100px;
   text-align: center;
@@ -377,15 +381,18 @@ td {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--main-lite-color);
   transition: 0.4s;
   border-radius: 34px;
 }
 
-/* Botón interno */
 .slider::before {
+  content: "🌞";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
   position: absolute;
-  content: "";
   height: 26px;
   width: 26px;
   left: 4px;
@@ -395,27 +402,30 @@ td {
   border-radius: 50%;
 }
 
+input:checked+.slider::before {
+  transform: translateX(26px);
+  content: "🌙";
+}
+
+
 /* Activado */
 input:checked+.slider {
-  background-color: gray;
+  background-color: #555;
   /* #2196F3;*/
   background-image: 🌞🌙;
 }
 
-input:checked+.slider::before {
-  transform: translateX(26px);
-}
 
 
 /* ============== HAMBURGER MENU ============= */
-.mode-toggle{
+.mode-toggle {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 100;
   background-color: transparent;
   height: 1rem;
-  }
+}
 
 .topnav {
   position: fixed;
@@ -543,7 +553,7 @@ nav a {
 
 .middle-container {
   min-height: 100vh;
-  max-width:90%;
+  max-width: 90%;
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -576,7 +586,8 @@ nav a {
   background-color: transparent !important;
 }
 
-#I-am h2, #welcome {
+#I-am h2,
+#welcome {
   margin-bottom: 1.5rem;
   color: var(--h3-color);
 }
@@ -644,6 +655,7 @@ nav a {
 }
 
 .about-me {
+  color: #333;
   padding: 2rem;
   max-width: 90%;
   margin: 0 auto;
@@ -654,9 +666,8 @@ nav a {
   border-collapse: collapse;
   margin: 0 auto;
   font-family: var(--main-font);
-  color: whitesmoke;
   font-size: medium;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 2;
 }
 
@@ -786,10 +797,10 @@ nav a {
 }
 
 .tech-table tr:hover {
-  background:#444;
+  background: #444;
   transform: scale(1.02);
   transition: all 0.3s ease;
-  }
+}
 
 
 .tech-category {
@@ -799,7 +810,13 @@ nav a {
 }
 
 
+/* ==============================CANVAS ===============================*/
 
+#myCanvasContainer {
+
+  display: inline-block;
+
+}
 
 /* ================== HOBBIES ================ */
 
@@ -1070,7 +1087,6 @@ footer {
 
 #skills {
   position: relative;
-  background-color: var(--main-bg-color);
   z-index: 2;
   padding: 2rem 0;
 
@@ -1078,7 +1094,6 @@ footer {
 
 #technologies {
   position: relative;
-  background-color: var(--main-bg-color);
   z-index: 3;
   padding: 2rem 0;
 }
@@ -1086,14 +1101,12 @@ footer {
 #repositories-main {
   position: relative;
   width: 100%;
-  background-color: var(--main-bg-color);
   z-index: 4;
   padding: 2rem 0;
 }
 
 .contact-me {
   position: relative;
-  background-color: var(--main-bg-color);
   padding: 2 rem 0;
 }
 
@@ -1262,7 +1275,7 @@ footer {
     padding: 0 10px;
   }
 
-/*  .carousel-inner img {
+  /*  .carousel-inner img {
     max-height: 120px;
   }
 */

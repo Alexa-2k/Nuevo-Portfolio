@@ -9,13 +9,13 @@
 
     <title>Lorena Rachich</title>
 
- <!-------------- BOOTSTRAP CSS ------------->
+    <!-------------- BOOTSTRAP CSS ------------->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
- <!-------- STYLE, ANIMATIONS & FONTS -------->
+    <!-------- STYLE, ANIMATIONS & FONTS -------->
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="assets/images/favicon.ico">
@@ -30,7 +30,7 @@
   <!--------------------- BODY -------------------->
 
   <body>
-  
+
     <div class="switch">
       <label for="toggle-mode">
         🌞🌙
@@ -39,30 +39,31 @@
       </label>
     </div>
 
-  <!-------------------- HEADER ------------------>
+    <!-------------------- HEADER ------------------>
     <header class="main-header">
 
       <div class="fill top_container">
+        <!--------- IMAGES & TEXT ANIMATIONS ------------->
 
-  <!--------- IMAGES & TEXT ANIMATIONS ------------->
-
-        <img class="animate__animated animate__bounceInRight top_cloud" src="assets/images/cloud1.png" alt="cloud-img">
-        <img class="animate__animated animate__bounceInLeft bottom_cloud" src="assets/images/cloud2.png"
-          alt="cloud-img">
-        <h1 class="animate__animated animate__bounceInDown">I'm Lore.</h1>
-        <h2 class="animate__animated animate__bounceInRight">a <span
-            class=" inblock animate__animated animate__bounceInUp, animate__rubberBand pro">pro</span> <span
-            class="inblock animate__animated animate__bounceInRight">grammer.</span></h2>
-        <img class="animate__animated animate__bounceInUp sun" src="" alt="sun-img">
-        <img class="mountains animate__animated animate__bounceInLeft" src="assets/images/goals.png" alt="mountain-img">
+          <img class="animate__animated animate__bounceInRight top_cloud" src="assets/images/cloud1.png"
+            alt="cloud-img">
+          <img class="animate__animated animate__bounceInLeft bottom_cloud" src="assets/images/cloud2.png"
+            alt="cloud-img">
+          <h1 class="animate__animated animate__bounceInDown">I'm Lore.</h1>
+          <h2 class="animate__animated animate__bounceInRight programmer" >a <span
+              class=" inblock animate__animated animate__bounceInUp, animate__rubberBand pro">pro</span> <span
+              class="inblock animate__animated animate__bounceInRight programmer" >grammer.</span></h2>
+          <img class="animate__animated animate__bounceInUp sun" src="" alt="sun-img">
+          <img class="mountains animate__animated animate__bounceInLeft" src="assets/images/goals.png"
+            alt="mountain-img">
 
       </div>
 
     </header>
 
 
-  <!--------------- HAMBURGER MENU ---------------->
-  <!-- Still need to modularize with JavaScript (I’m currently learning it). -->
+    <!--------------- HAMBURGER MENU ---------------->
+    <!-- Still need to modularize with JavaScript (I’m currently learning it). -->
 
     <div class="topnav">
 
@@ -86,24 +87,24 @@
     </section>
 
 
-  <!--------------------- PROFILE ------------------>
+    <!--------------------- PROFILE ------------------>
 
     <section class="middle-container ">
       <div class="profile flex-container">
 
         <div id="I-am">
-          <h2>Hello.</h2>
+          <h2 id="hello">Hello.</h2>
           <h3 id="welcome">Welcome to my personal site</h3>
           <img src="assets/images/circled anime 192.png" alt="Lore-anime-pic">
           <h3 class="intro">I am Lore, </h3>
         </div> <!--I-am-->
 
 
-  <!---------------- PROFESSION CAROUSEL ---------------->
+        <!---------------- PROFESSION CAROUSEL ---------------->
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-    <!--------------- Indicators -------------->
+          <!--------------- Indicators -------------->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -190,9 +191,9 @@
       </div> <!-- div profile-->
     </section> <!-- section middle-->
 
- <!---------------- END OF CAROUSEL ------------->
+    <!---------------- END OF CAROUSEL ------------->
 
- <!----------------- ABOUT ME TEXT --------------->
+    <!----------------- ABOUT ME TEXT --------------->
 
     <section class="about-me">
       <table class="about-me-table">
@@ -203,7 +204,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td id="about-me-middle_text">
             My professional journey has taken me from observing the stars to coding applications.
             This diversity of experience gives me a valuable perspective
             to solve problems and create innovative solutions.
@@ -217,15 +218,14 @@
           </td>
         </tr>
       </table>
- <!--------------------- DIVISOR ------------------>
-      <div class="hr">
-        <hr>
-      </div>
     </section>
 
-
- <!----------------- SKILLS TABLE ---------------->
+    <!----------------- SKILLS TABLE ---------------->
     <section id="skills">
+      <!--------------------- DIVISOR ------------------>
+      <div class="hr" id="skills-hr">
+        <hr>
+      </div>
       <h2>My skills.</h2>
 
       <div class="skills-container">
@@ -257,19 +257,49 @@
           </div>
         </div>
       </div>
-
-      <div class="hr">
+      <!--------------------- DIVISOR ------------------>
+      <div class="hr" id="tech-hr">
         <hr>
       </div>
-
     </section> <!--skills container -->
 
-
-
- <!--------------- TECHNOLOGIES TABLE -------------->
+    <!--------------- TECHNOLOGIES TABLE -------------->
 
     <section id="technologies" class="tech-section">
       <h2>Technologies I work with</h2>
+
+      <div id="myCanvasContainer">
+        <canvas width="600" height="500" id="myCanvas">
+          <div id="tags">
+            <ul>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/html80.png"></a></li>
+              <li><a href="#technologies" target="_blank"> <img src="./assets/images/techs/CSS80.png"></a></li>
+              <li><a href="#technologies" target="_blank"> <img src="./assets/images/techs/JS80.png"></a></li>
+              <li><a href="#technologies" target="_blank"> <img src="./assets/images/techs/python-logo80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/mongoDB80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img
+                    src="./assets/images/techs/Android_Studio_Logo80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/bootstrap80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/c80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/figma.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/git.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/github80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/java.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/Jira80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/Kotlin.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/vsc.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/MySQLinverso.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/php.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/react80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/trello.png"></a></li>
+              <lili><a href="#technologies" target="_blank"><img src="./assets/images/techs/VS.png"></a></lili>
+              >
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/node.png"></a></ </ul>
+          </div>
+        </canvas>
+      </div> <!-- MyCanvascontainer-->
+
+
       <table class="tech-table">
         <thead>
           <tr>
@@ -306,17 +336,15 @@
           </tr>
         </tbody>
       </table>
- <!--------------------- DIVISOR ------------------>
-      <div class="hr">
+      <!--------------------- DIVISOR ------------------>
+      <div class="hr" id="repo-hr">
         <hr>
       </div>
     </section>
 
 
-
-
- <!---------- REPOSITORIES SAMPLE GRID ------------>
- <!-- Next: Rework with React -->
+    <!---------- REPOSITORIES SAMPLE GRID ------------>
+    <!-- Next: Rework with React -->
 
     <section id="repositories-main">
 
@@ -578,18 +606,15 @@
       </div><!--repos-contenedor-->
 
 
+      <!--------------------- DIVISOR ------------------>
 
- <!--------------------- DIVISOR ------------------>
-
-      <div class="hr">
+      <div class="hr" id="hobbies-hr">
         <hr>
       </div>
     </section> <!--repositories-main-->
 
 
- <!-------------------- HOBBIES -------------------->
- <!-- I want to animate this section with icons floating around the screen in a spherical motion, using Canva. I have the script. I didn’t include it in the code because it goes beyond the scope of the course and it's not my own work" -->
-
+    <!-------------------- HOBBIES -------------------->
     <section id="hobbies-container">
       <div class="section-title">
         <h2>My Hobbies.</h2>
@@ -608,16 +633,13 @@
       <p class="hobbies-txt">Stargazing with my own telescopes, traveling, collecting tools and fixing things,
         gardening, cooking, decorating cakes and playing the piano.</p>
 
- <!--------------------- DIVISOR ------------------>
-      <div class="hr">
+      <!--------------------- DIVISOR ------------------>
+      <div class="hr" id="contact-hr">
         <hr>
       </div>
-
-
     </section> <!--hobbies-container-->
 
-
- <!------------------ CONTACT FORM ----------------->
+    <!------------------ CONTACT FORM ----------------->
 
     <!-- It still lacks functionality. -->
 
@@ -649,7 +671,7 @@
     </section>
 
 
- <!-------------------- FOOTER ----------------->
+    <!-------------------- FOOTER ----------------->
     <footer>
 
       <a href="https://www.linkedin.com/in/lorena-rachich/" target="_blank">
@@ -665,9 +687,11 @@
 
     </footer>
 
- <!--------------------- JAVASCRIPT ------------------>
+    <!--------------------- JAVASCRIPT ------------------>
 
     <script src="./js/script.js"></script>
+    <script src="./js/tagcanvas.js"></script>
+    <script src="./js/tagcanvas.min.js"></script>
   </body>
 
 </html>

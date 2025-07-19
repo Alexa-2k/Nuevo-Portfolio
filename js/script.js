@@ -37,6 +37,19 @@ toggle.addEventListener("change", () => {
 });
 
 
+
+  window.onload = function () {
+		try {
+			TagCanvas.Start("myCanvas");
+		} catch (e) {
+			// something went wrong, hide the canvas container
+			document.getElementById("myCanvasContainer").style.display = "none";
+		}
+	}; 
+
+
+
+
 // // Cambiar cuando se usa el switch
 // toggle.addEventListener('change', () => {
 //   modoOscuro = toggle.checked;
