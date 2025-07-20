@@ -31,22 +31,31 @@
 
   <body>
 
+    <div class="switch">
+      <label for="toggle-mode">
+        🌞🌙
+        <input type="checkbox" id="toggle-mode">
+        <span class="slider"></span>
+      </label>
+    </div>
+
     <!-------------------- HEADER ------------------>
     <header class="main-header">
 
       <div class="fill top_container">
-
         <!--------- IMAGES & TEXT ANIMATIONS ------------->
 
-        <img class="animate__animated animate__bounceInRight top_cloud" src="assets/images/cloud1.png" alt="cloud-img">
-        <img class="animate__animated animate__bounceInLeft bottom_cloud" src="assets/images/cloud2.png"
-          alt="cloud-img">
-        <h1 class="animate__animated animate__bounceInDown">I'm Lore.</h1>
-        <h2 class="animate__animated animate__bounceInRight">a <span
-            class=" inblock animate__animated animate__bounceInUp, animate__rubberBand pro">pro</span> <span
-            class="inblock animate__animated animate__bounceInRight">grammer.</span></h2>
-        <img class="animate__animated animate__bounceInUp sun" src="assets/images/sun.png" alt="sun-img">
-        <img class="mountains animate__animated animate__bounceInLeft" src="assets/images/goals.png" alt="mountain-img">
+          <img class="animate__animated animate__bounceInRight top_cloud" src="assets/images/cloud1.png"
+            alt="cloud-img">
+          <img class="animate__animated animate__bounceInLeft bottom_cloud" src="assets/images/cloud2.png"
+            alt="cloud-img">
+          <h1 class="animate__animated animate__bounceInDown">I'm Lore.</h1>
+          <h2 class="animate__animated animate__bounceInRight programmer" >a <span
+              class=" inblock animate__animated animate__bounceInUp, animate__rubberBand pro">pro</span> <span
+              class="inblock animate__animated animate__bounceInRight programmer" >grammer.</span></h2>
+          <img class="animate__animated animate__bounceInUp sun" src="" alt="sun-img">
+          <img class="mountains animate__animated animate__bounceInLeft" src="assets/images/goals.png"
+            alt="mountain-img">
 
       </div>
 
@@ -63,8 +72,8 @@
       </a>
       <div id="myLinks">
         <ul>
-          <li><a href="index.html">Home <img src="assets/images/UKflag.png"> </a></li>
-          <li></li><a href="index-sp.html">Inicio <img src="assets/images/SPflag.png"></a></li>
+          <li><a href="index.html"><img src="assets/images/UKflag.png">  Home</a></li>
+          <li></li><a href="index-sp.html"><img src="assets/images/SPflag.png">  Inicio</a></li>
           <li><a href="#I-am">Who I am</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#hobbies-container">Hobbies</a></li>
@@ -84,7 +93,7 @@
       <div class="profile flex-container">
 
         <div id="I-am">
-          <h2>Hello.</h2>
+          <h2 id="hello">Hello.</h2>
           <h3 id="welcome">Welcome to my personal site</h3>
           <img src="assets/images/circled anime 192.png" alt="Lore-anime-pic">
           <h3 class="intro">I am Lore, </h3>
@@ -195,7 +204,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td id="about-me-middle_text">
             My professional journey has taken me from observing the stars to coding applications.
             This diversity of experience gives me a valuable perspective
             to solve problems and create innovative solutions.
@@ -211,14 +220,12 @@
       </table>
     </section>
 
-    <!--------------------- DIVISOR ------------------>
-    <div class="hr">
-      <hr>
-    </div>
-
-
     <!----------------- SKILLS TABLE ---------------->
     <section id="skills">
+      <!--------------------- DIVISOR ------------------>
+      <div class="hr" id="skills-hr">
+        <hr>
+      </div>
       <h2>My skills.</h2>
 
       <div class="skills-container">
@@ -250,19 +257,49 @@
           </div>
         </div>
       </div>
-
-      <div class="hr">
+      <!--------------------- DIVISOR ------------------>
+      <div class="hr" id="tech-hr">
         <hr>
       </div>
-
     </section> <!--skills container -->
-
-
 
     <!--------------- TECHNOLOGIES TABLE -------------->
 
     <section id="technologies" class="tech-section">
       <h2>Technologies I work with</h2>
+
+      <div id="myCanvasContainer">
+        <canvas width="600" height="500" id="myCanvas">
+          <div id="tags">
+            <ul>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/html80.png"></a></li>
+              <li><a href="#technologies" target="_blank"> <img src="./assets/images/techs/CSS80.png"></a></li>
+              <li><a href="#technologies" target="_blank"> <img src="./assets/images/techs/JS80.png"></a></li>
+              <li><a href="#technologies" target="_blank"> <img src="./assets/images/techs/python-logo80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/mongoDB80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img
+                    src="./assets/images/techs/Android_Studio_Logo80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/bootstrap80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/c80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/figma.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/git.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/github80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/java.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/Jira80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/Kotlin.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/vsc.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/php.png"></a></li>
+              <!-- <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/MySQLinverso.png"></a></li> -->
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/MySQL80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/react80.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/trello.png"></a></li>
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/VS.png"></a></li>        
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/node.png"></a></li> </ul>
+          </div>
+        </canvas>
+      </div> <!-- MyCanvascontainer-->
+
+
       <table class="tech-table">
         <thead>
           <tr>
@@ -299,12 +336,11 @@
           </tr>
         </tbody>
       </table>
+      <!--------------------- DIVISOR ------------------>
+      <div class="hr" id="repo-hr">
+        <hr>
+      </div>
     </section>
-
-    <!--------------------- DIVISOR ------------------>
-    <div class="hr">
-      <hr>
-    </div>
 
 
     <!---------- REPOSITORIES SAMPLE GRID ------------>
@@ -570,18 +606,15 @@
       </div><!--repos-contenedor-->
 
 
-
       <!--------------------- DIVISOR ------------------>
 
-      <div class="hr">
+      <div class="hr" id="hobbies-hr">
         <hr>
       </div>
     </section> <!--repositories-main-->
 
 
     <!-------------------- HOBBIES -------------------->
-    <!-- I want to animate this section with icons floating around the screen in a spherical motion, using Canva. I have the script. I didn’t include it in the code because it goes beyond the scope of the course and it's not my own work" -->
-
     <section id="hobbies-container">
       <div class="section-title">
         <h2>My Hobbies.</h2>
@@ -599,13 +632,12 @@
       <h3>Here's what I <span class="pro2">love </span> doing in my free time</h3>
       <p class="hobbies-txt">Stargazing with my own telescopes, traveling, collecting tools and fixing things,
         gardening, cooking, decorating cakes and playing the piano.</p>
+
+      <!--------------------- DIVISOR ------------------>
+      <div class="hr" id="contact-hr">
+        <hr>
+      </div>
     </section> <!--hobbies-container-->
-
-    <!--------------------- DIVISOR ------------------>
-    <div class="hr">
-      <hr>
-    </div>
-
 
     <!------------------ CONTACT FORM ----------------->
 
@@ -658,6 +690,8 @@
     <!--------------------- JAVASCRIPT ------------------>
 
     <script src="./js/script.js"></script>
+    <script src="./js/tagcanvas.js"></script>
+    <script src="./js/tagcanvas.min.js"></script>
   </body>
 
 </html>
