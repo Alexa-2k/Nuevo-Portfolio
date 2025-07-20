@@ -1,3 +1,5 @@
+
+// HAMBURGER MENU
 /* Alterna entre mostrar u ocultar los links de navegacion cuando el usuario hace click en el ícono hamburguesa */
 
   function showHide() {
@@ -9,6 +11,9 @@
     icon.classList.toggle("open");
   }
 
+
+//===========================================//
+// SWITCH DARK / LIGHT MODE
 
 const toggle = document.getElementById('toggle-mode');
 const sol = document.querySelector('.sun');
@@ -36,7 +41,8 @@ toggle.addEventListener("change", () => {
 	location.reload(); // 🔁 Recarga la página
 });
 
-
+// =============================================//
+// CANVAS
 
   window.onload = function () {
 		try {
@@ -49,10 +55,3 @@ toggle.addEventListener("change", () => {
 
 
 
-
-// // Cambiar cuando se usa el switch
-// toggle.addEventListener('change', () => {
-//   modoOscuro = toggle.checked;
-//   localStorage.setItem('dark-mode', modoOscuro);
-//   aplicarModo(modoOscuro);
-// });
