@@ -22,7 +22,7 @@ const sol = document.querySelector('.sun');
 function aplicarModo(oscuro) {
   document.body.classList.toggle('dark-mode', oscuro);
   document.body.classList.toggle('light-mode', !oscuro);
-  sol.src = oscuro ? '../assets/images/Moon.png' : '../assets/images/sun.png';
+  sol.src = oscuro ? 'assets/images/Moon.png' : 'assets/images/sun.png';
   toggle.checked = oscuro;
 }
 
