@@ -131,8 +131,22 @@ body.dark-mode .skill-item {
 }
 
 body.dark-mode .tech-category {
-  color: #11999E;
+  color: #c9b278;
+  /*#11999E*/;
 }
+
+body.dark-mode .tech-table th{
+  color: whitesmoke;
+  background: linear-gradient(135deg, #a49263, #c9b278,
+    #d3be8e,
+    #dccba4,
+    #e6d8ba,
+    #eee5d1,
+    #f7f2e8,
+    #ffffff);
+
+}
+
 
 body.dark-mode footer {
   background: var(--dark-mode-color);
@@ -198,9 +212,7 @@ body.light-mode .about-me-table #about-me-middle_text {
 }
 
 body.light-mode footer {
-  background: lightgray;
-  /*url(../assets/images/bckgd.jpg)*/
-  ;
+  background: url(../assets/images/bckgd.jpg);
 }
 
 body.light-mode .tech-table {
@@ -208,7 +220,10 @@ body.light-mode .tech-table {
 }
 
 body.light-mode .tech-table th {
-  background: linear-gradient(135deg, #66BFBF, #11999E);
+
+background: linear-gradient(135deg, #c9b278, #a49263, #81734f ,#60553c ,#40392a ,#232019, #000000);
+    /*#66BFBF, #11999E*/
+  
   color:var(--a-font-color);
 }
 
@@ -600,8 +615,7 @@ nav a {
 #I-am h2,
 #welcome {
   margin-bottom: 1.5rem;
-  color: var(--h3-color);
-}
+}  
 
 #I-am h3 {
   margin-bottom: 2.5rem auto;
@@ -614,7 +628,7 @@ nav a {
 /* ================ CAROUSEL ================ */
 
 .carousel-caption {
-  color: grey;
+  color:#c9b278;
   position: absolute;
   left: 0%;
   bottom: 0;
@@ -818,7 +832,7 @@ nav a {
 
 .tech-category {
   font-weight: bold;
-  color: #11999E;
+  color:#c9b278;
   width: 25%;
 }
 
@@ -935,7 +949,15 @@ nav a {
 }
 
 .form_btn {
-  background-image: linear-gradient(to bottom, #11CDD4, #043f41);
+  background-image:  linear-gradient(to bottom, #c9b278,
+    #a49263,
+    #81734f,
+    #60553c,
+    #40392a,
+    #232019,
+    #000000);
+    
+                                    /* #11CDD4, #043f41*/
   border: none;
   border-radius: 8px;
   font-family: var(--main-font);
@@ -1081,13 +1103,19 @@ footer {
 
 .more {
   background-color: transparent;
-  border-color: var(--glow-color);
-  color: var(--glow-color);
+  /*border-color: linear-gradient(135deg, #a49263, #c9b278,
+        #d3be8e,
+        #dccba4,
+        #e6d8ba,
+        #eee5d1,
+        #f7f2e8,
+        #ffffff);*/
+  color: var(--light-h2h3);
   font-family: "Helvetica lightweight", sans-serif;
   padding: 1rem;
   border-radius: 8px;
   font-size: 2rem;
-  box-shadow: var(--btn-shadow);
+  box-shadow: var(--shadow);
 }
 
 
