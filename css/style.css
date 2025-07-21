@@ -162,6 +162,10 @@ body.light-mode .sample
   color: var(--color-gray);
 }
 
+body.light-mode h1 {
+ text-shadow: var(--lite-mode-shadow);
+}
+
 body.light-mode .programmer {
   color: var(--main-h1h2-color);
 }
@@ -1103,21 +1107,14 @@ footer {
 
 .more {
   background-color: transparent;
-  /*border-color: linear-gradient(135deg, #a49263, #c9b278,
-        #d3be8e,
-        #dccba4,
-        #e6d8ba,
-        #eee5d1,
-        #f7f2e8,
-        #ffffff);*/
   color: var(--light-h2h3);
   font-family: "Helvetica lightweight", sans-serif;
   padding: 1rem;
+  border-color: var(--a-font-color);
   border-radius: 8px;
   font-size: 2rem;
-  box-shadow: var(--shadow);
+  box-shadow: var(--lite-mode-shadow);
 }
-
 
 .btn {
   margin: 5% auto;
@@ -1262,7 +1259,7 @@ footer {
   }
 
   .carousel-text {
-    color: var(--h3-color);
+    color: var(--light-h2h3);
     width: fit-content;
   }
 
