@@ -12,9 +12,6 @@
   /*===== Colors =====*/
 
   --intro-till: url(../assets/images/fondo_lindo.png);
-
-  /*--light-mode-background: #faf8f3;*/
-  /*--light-bckgd: */
   --light-mode-background: linear-gradient(to bottom, #faf8f3, #F3EEE1);
   --inv-light-mode-background: linear-gradient(to top, #faf8f3, #F3EEE1);
 
@@ -22,6 +19,8 @@
   /* #c9b278; */
   --color-gray: #63615d;
   /* #878580; */
+  --dark-text-color:#60553c;
+  --medium-dar-text-color:#81734f;
   --about-me-p: #555;
   --dark-mode-gradient: linear-gradient(to bottom, #333333d9, #000000d9), url(../assets/images/bckgd.jpg);
   --dark-mode-inverse: linear-gradient(to top, #333333d9, #000000d9), url(../assets/images/bckgd.jpg);
@@ -34,7 +33,7 @@
 
   --shadow: 0 8px 15px rgba(240, 240, 240, 0.7);
   --btn-shadow: 0 8px 15px rgb(8, 102, 125, 0.8);
-  --lite-mode-shadow: 0 8px 15px rgba(100, 100, 100, 0.7);
+  --lite-mode-shadow: 0 8px 15px #81734fee;
 
 
   /* TEAL PALETTE */
@@ -180,7 +179,7 @@ body.dark-mode footer {
 body.light-mode p,
 body.light-mode td,
 body.light-mode .sample {
-  color: var(--color-gray);
+  color: var(--dark-text-color);
   font-weight: 500;
 }
 
@@ -234,8 +233,8 @@ body.light-mode .about-me-table {
 }
 
 body.light-mode .about-me-table td {
-  color: var(--about-me-p);
-  font-weight: 600;
+  color: var(--dark-text-color) ;
+  font-weight: 500;
 
 }
 
@@ -280,7 +279,7 @@ body.light-mode .tech-table tr:hover {
 
 body.light-mode .more {
   box-shadow: var(--lite-mode-shadow);
-  color: var(--color-gray);
+  color: var(--dark-text-color);
   border: 0.5px solid lightgray;
 }
 
@@ -1113,6 +1112,7 @@ footer {
 
 .sample {
   color: white;
+  font-weight: 500;
   margin: 5rem auto
 }
 
