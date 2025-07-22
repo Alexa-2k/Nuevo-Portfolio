@@ -46,7 +46,154 @@ Puede verse una versión en vivo de este portafolio aquí:
 
 
 ## Estructura del Proyecto
-
-<pre lang="markdown"> ```txt . ├── README.md ├── assets │ └── images │ ├── EEng yellow.jpg │ ├── Estructura.png │ ├── Foto_oficina.png │ ├── Magallanes_by_E_Scharberger.jpg │ ├── Moon.png │ ├── Noche de Observatorio1.jpg │ ├── SPflag.png │ ├── Sirius.jpg │ ├── UKflag.png │ ├── Under_construction.png │ ├── X_logo.png │ ├── X_logoblack.png │ ├── astronomy.png │ ├── baggage.png │ ├── bckgd.jpg │ ├── cake-decoration.png │ ├── circled anime 192.png │ ├── cloud1.png │ ├── cloud2.png │ ├── coding-circled.png │ ├── construccion-removebg-preview.png │ ├── cooking.png │ ├── data analyst.jpg │ ├── eeng robot.png │ ├── favicon-16x16.png │ ├── favicon-32x32.png │ ├── favicon.ico │ ├── fondo_lindo-flip.png │ ├── fondo_lindo.png │ ├── fullstack developer2.jpg │ ├── galaxy.png │ ├── gardening.png │ ├── git.png │ ├── github-mark-c791e9551fe4.zip │ ├── github_green.png │ ├── goals.png │ ├── languages.png │ ├── linkedin.png │ ├── maths medium.png │ ├── mountains.png │ ├── nomad0.png │ ├── nomad3a.jpg │ ├── package-box.png │ ├── piano-ico.png │ ├── piano.jpeg │ ├── plantilla.png │ ├── qa-tester.jpg │ ├── repos │ │ ├── Batman.png │ │ ├── CAC-movies.png │ │ ├── JS-PFO.png │ │ ├── JS-ej.png │ │ ├── MiniAlura.png │ │ ├── apeperia.png │ │ ├── barberia.png │ │ ├── conferencia.png │ │ ├── drumkit.png │ │ ├── encriptador.png │ │ ├── form.png │ │ ├── tasks-list.png │ │ ├── televisor.png │ │ └── tienda-cafe.png │ ├── sample.png │ ├── sample2.png │ ├── subjects │ │ ├── Web development icons created by vectorsmar-httpswww.flaticon.com.png │ │ ├── algebra_1.png │ │ ├── algebra_2.png │ │ ├── algebra_3.png │ │ ├── astronomy.png │ │ ├── chemistry 3.png │ │ ├── chemistry1.png │ │ ├── chemistry2.png │ │ ├── electricity1.png │ │ ├── electricity_2.png │ │ ├── electricity_3.png │ │ ├── elem_math.png │ │ ├── elem_math2.png │ │ ├── elem_math3.png │ │ ├── elem_math4.png │ │ ├── excel.png │ │ ├── internet.png │ │ ├── internet1.png │ │ ├── internet2.png │ │ ├── internet3.png │ │ ├── internet4.png │ │ ├── math 1.png │ │ ├── math2.png │ │ ├── math3.png │ │ ├── rigid body naif.png │ │ ├── rigid body.png │ │ ├── rotation naif.png │ │ ├── rotation.png │ │ ├── waves.png │ │ ├── waves1.png │ │ ├── windows.jpg │ │ ├── windows_word.png │ │ ├── word.png │ │ └── word2.png │ ├── sun.png │ ├── teach00.jpg │ ├── techs │ │ ├── Android_Studio_Logo80.png │ │ ├── CSS80.png │ │ ├── Jira80.png │ │ ├── Kotlin.png │ │ ├── MySQL80.png │ │ ├── MySQLinverso.png │ │ ├── Node.svg │ │ ├── VS.png │ │ ├── VSC.png │ │ ├── bootstrap80.png │ │ ├── c80.png │ │ ├── figma.png │ │ ├── git.png │ │ ├── github80.png │ │ ├── html80.png │ │ ├── java.png │ │ ├── js80.png │ │ ├── mongoDB80.png │ │ ├── node.png │ │ ├── php.png │ │ ├── python-logo80.png │ │ ├── react80.png │ │ └── trello.png │ ├── telescope medium.png │ ├── travel03a.jpg │ ├── whatsapp.png │ └── white-noise.jpg ├── components │ ├── footer.html │ ├── switch.html │ └── topnav.html ├── css │ ├── online.css │ └── style.css ├── index-sp.html ├── index.html ├── js │ ├── script.js │ ├── tagcanvas.js │ └── tagcanvas.min.js ├── online-en.html ├── online-sp.html ├── register.html └── schedule.html ``` </pre>
-
-
+```txt
+.
+├── README.md
+├── assets
+│   └── images
+│       ├── EEng yellow.jpg
+│       ├── Estructura.png
+│       ├── Foto_oficina.png
+│       ├── Magallanes_by_E_Scharberger.jpg
+│       ├── Moon.png
+│       ├── Noche de Observatorio1.jpg
+│       ├── SPflag.png
+│       ├── Sirius.jpg
+│       ├── UKflag.png
+│       ├── Under_construction.png
+│       ├── X_logo.png
+│       ├── X_logoblack.png
+│       ├── astronomy.png
+│       ├── baggage.png
+│       ├── bckgd.jpg
+│       ├── cake-decoration.png
+│       ├── circled anime 192.png
+│       ├── cloud1.png
+│       ├── cloud2.png
+│       ├── coding-circled.png
+│       ├── construccion-removebg-preview.png
+│       ├── cooking.png
+│       ├── data analyst.jpg
+│       ├── eeng robot.png
+│       ├── favicon-16x16.png
+│       ├── favicon-32x32.png
+│       ├── favicon.ico
+│       ├── fondo_lindo-flip.png
+│       ├── fondo_lindo.png
+│       ├── fullstack developer2.jpg
+│       ├── galaxy.png
+│       ├── gardening.png
+│       ├── git.png
+│       ├── github-mark-c791e9551fe4.zip
+│       ├── github_green.png
+│       ├── goals.png
+│       ├── languages.png
+│       ├── linkedin.png
+│       ├── maths medium.png
+│       ├── mountains.png
+│       ├── nomad0.png
+│       ├── nomad3a.jpg
+│       ├── package-box.png
+│       ├── piano-ico.png
+│       ├── piano.jpeg
+│       ├── plantilla.png
+│       ├── qa-tester.jpg
+│       ├── repos
+│       │   ├── Batman.png
+│       │   ├── CAC-movies.png
+│       │   ├── JS-PFO.png
+│       │   ├── JS-ej.png
+│       │   ├── MiniAlura.png
+│       │   ├── apeperia.png
+│       │   ├── barberia.png
+│       │   ├── conferencia.png
+│       │   ├── drumkit.png
+│       │   ├── encriptador.png
+│       │   ├── form.png
+│       │   ├── tasks-list.png
+│       │   ├── televisor.png
+│       │   └── tienda-cafe.png
+│       ├── sample.png
+│       ├── sample2.png
+│       ├── subjects
+│       │   ├── Web development icons created by vectorsmar-httpswww.flaticon.com.png
+│       │   ├── algebra_1.png
+│       │   ├── algebra_2.png
+│       │   ├── algebra_3.png
+│       │   ├── astronomy.png
+│       │   ├── chemistry 3.png
+│       │   ├── chemistry1.png
+│       │   ├── chemistry2.png
+│       │   ├── electricity1.png
+│       │   ├── electricity_2.png
+│       │   ├── electricity_3.png
+│       │   ├── elem_math.png
+│       │   ├── elem_math2.png
+│       │   ├── elem_math3.png
+│       │   ├── elem_math4.png
+│       │   ├── excel.png
+│       │   ├── internet.png
+│       │   ├── internet1.png
+│       │   ├── internet2.png
+│       │   ├── internet3.png
+│       │   ├── internet4.png
+│       │   ├── math 1.png
+│       │   ├── math2.png
+│       │   ├── math3.png
+│       │   ├── rigid body naif.png
+│       │   ├── rigid body.png
+│       │   ├── rotation naif.png
+│       │   ├── rotation.png
+│       │   ├── waves.png
+│       │   ├── waves1.png
+│       │   ├── windows.jpg
+│       │   ├── windows_word.png
+│       │   ├── word.png
+│       │   └── word2.png
+│       ├── sun.png
+│       ├── teach00.jpg
+│       ├── techs
+│       │   ├── Android_Studio_Logo80.png
+│       │   ├── CSS80.png
+│       │   ├── Jira80.png
+│       │   ├── Kotlin.png
+│       │   ├── MySQL80.png
+│       │   ├── MySQLinverso.png
+│       │   ├── Node.svg
+│       │   ├── VS.png
+│       │   ├── VSC.png
+│       │   ├── bootstrap80.png
+│       │   ├── c80.png
+│       │   ├── figma.png
+│       │   ├── git.png
+│       │   ├── github80.png
+│       │   ├── html80.png
+│       │   ├── java.png
+│       │   ├── js80.png
+│       │   ├── mongoDB80.png
+│       │   ├── node.png
+│       │   ├── php.png
+│       │   ├── python-logo80.png
+│       │   ├── react80.png
+│       │   └── trello.png
+│       ├── telescope medium.png
+│       ├── travel03a.jpg
+│       ├── whatsapp.png
+│       └── white-noise.jpg
+├── components
+│   ├── footer.html
+│   ├── switch.html
+│   └── topnav.html
+├── css
+│   ├── online.css
+│   └── style.css
+├── index-sp.html
+├── index.html
+├── js
+│   ├── script.js
+│   ├── tagcanvas.js
+│   └── tagcanvas.min.js
+├── online-en.html
+├── online-sp.html
+├── register.html
+└── schedule.html
