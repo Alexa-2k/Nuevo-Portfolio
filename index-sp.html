@@ -2,14 +2,14 @@
 <html lang="es" dir="ltr">
 
   <head>
-    <!----- META TAGS ------->
+
+    <!----- META TAGS ----->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Lorena Rachich</title>
 
-
-    <!------ BOOTSTRAP CSS ------>
+    <!-------------- BOOTSTRAP CSS ------------->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -27,9 +27,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
+
   <!-------- CUERPO DE LA PÁGINA -------->
 
   <body>
+
     <div class="switch">
       <label for="toggle-mode">
         🌞🌙
@@ -42,68 +44,66 @@
     <header class="main-header">
 
       <div class="fill top_container">
-
         <!-- ANIMACIÓN DE TEXTO E IMÁGENES DE PORTADA --->
 
         <img class="animate__animated animate__bounceInRight top_cloud" src="assets/images/cloud1.png" alt="cloud-img">
         <img class="animate__animated animate__bounceInLeft bottom_cloud" src="assets/images/cloud2.png"
           alt="cloud-img">
-        <h1 class="animate__animated animate__bounceInDown">Soy Lore.</h1>
-        <h2 class="animate__animated animate__bounceInRight">una <span
+        <h1 class=" brillo">Soy <span class="brillo names"></span></h1>
+        <h2 class="animate__animated animate__bounceInRight programmer">una <span
             class=" inblock animate__animated animate__bounceInUp, animate__rubberBand pro">pro</span> <span
-            class="inblock animate__animated animate__bounceInRight">gramadora.</span></h2>
-        <img class="animate__animated animate__bounceInUp sun" src="assets/images/sun.png" alt="sun-img">
+            class="inblock animate__animated animate__bounceInRight programmer">gramadora.</span></h2>
+        <img class="animate__animated animate__bounceInUp sun" src="" alt="sun-img">
         <img class="mountains animate__animated animate__bounceInLeft" src="assets/images/goals.png" alt="mountain-img">
 
       </div>
 
     </header>
 
+
     <!----------- MENU HAMBURGUESA ---------->
-    <!-- Falta modularizar con JS (lo estoy aprendiendo) -->
 
     <div class="topnav">
 
       <a href="javascript:void(0);" class="icon" onclick="showHide()">
-        <i class="fa fa-bars animate__animate animate__rotateIn"></i></a>
+        <i class="fa fa-bars animate__animate animate__rotateIn"></i>
+      </a>
       <div id="myLinks">
         <ul>
-          <li><a href="index.html">Home <img src="assets/images/UKflag.png"> </a></li>
-          <li></li><a href="index-sp.html">Inicio <img src="assets/images/SPflag.png"></a></li>
-          <li><a href="#I-am">Quién soy</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="index.html"><img src="assets/images/UKflag.png"> Home</a></li>
+          <li></li><a href="index-sp.html"><img src="assets/images/SPflag.png"> Inicio</a></li>
+          <li><a href="#I-am">Sobre mí</a></li>
+          <li><a href="#skills">Conocimientos</a></li>
           <li><a href="#hobbies-container">Hobbies</a></li>
-          <li><a href="#repositories-main">Muestra de Repositorios</a></li>
-          <li><a href="online-sp.html">Clases online</a></li>
-
+          <li><a href="#repositories-main">Muestra de repositorios</a></li>
+          <li><a href="./online-en.html">Clases online</a></li>
           <li><a href="#contact-me">Contacto</a></li>
-
-          <!-- Registro para alumnos (a futuro)-->
-          <!-- <li><a class="colorverde" href="register.html">Register / Login</a></li>
-          <li><a href="online-en.html">Clases online</a></li> -->
         </ul>
       </div> <!-- MyLinks-->
-    </div> <!-- topnav-->
+
+    </div> <!-- topnav -->
+    </section>
 
 
-    <!--------------- PERFIL PERSONAL -------------->
+    <!---------------------  PERFIL ------------------>
 
     <section class="middle-container ">
       <div class="profile flex-container">
 
         <div id="I-am">
-          <h2>Hola.</h2>
-          <h3 id="welcome">Bienvenidos a mi página personal</h3>
+          <h2 id="hello">Hola.</h2>
+          <h3 id="welcome">Bienvenido a mi sitio personal</h3>
           <img src="assets/images/circled anime 192.png" alt="Lore-anime-pic">
           <h3 class="intro">Soy Lore, </h3>
         </div> <!--I-am-->
 
 
-        <!--------------- CAROUSEL PROFESIÓN ------------->
+        <!---------------- CAROUSEL ---------------->
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-          <!-- Indicators -->
+          <!--------------- Indicadores -------------->
+
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -115,20 +115,18 @@
             <li data-target="#myCarousel" data-slide-to="7"></li>
           </ol>
 
-
-          <!--------------- IMÁGENES CAROUSEL ------------->
-
+          <!--------- Wrapper para slides ----------->
           <div class="carousel-inner " role="listbox">
             <div class="item active">
-              <img src="assets/images/fullstack developer2.jpg" alt="Desarrolladora web.">
+              <img src="assets/images/fullstack developer2.jpg" alt="desarrolladora web.">
 
               <div class="carousel-caption">
-                <h3 class="carousel-text">desarrolladora web.</h3>
+                <h3 class="carousel-text">desarrolladora web</h3>
               </div> <!-- carousel-caption-->
             </div> <!-- item-active-->
 
             <div class="item">
-              <img src="assets/images/qa-tester.jpg" alt="Analista QA">
+              <img src="assets/images/qa-tester.jpg" alt="analista QA">
               <div class="carousel-caption">
                 <h3 class="carousel-text">analista QA</h3>
               </div> <!-- carousel-caption-->
@@ -142,60 +140,59 @@
             </div> <!-- item-->
 
             <div class="item">
-              <img src="assets/images/data analyst.jpg" alt="Analista de datos">
+              <img src="assets/images/data analyst.jpg" alt="analista de datos">
               <div class="carousel-caption">
                 <h3 class="carousel-text">analista de datos</h3>
               </div> <!-- carousel-caption-->
             </div> <!-- item-->
 
             <div class="item">
-              <img src="assets/images/eeng robot.png" alt="Ingeniera Electronica">
+              <img src="assets/images/eeng robot.png" alt="ingeniera electrónica">
               <div class="carousel-caption">
                 <h3 class="carousel-text">ingeniera electrónica</h3>
               </div> <!-- carousel-caption-->
             </div> <!-- item-->
 
             <div class="item">
-              <img src="assets/images/Noche de Observatorio1.jpg" alt="Astrónoma">
+              <img src="assets/images/Noche de Observatorio1.jpg" alt="astrónoma">
               <div class="carousel-caption">
                 <h3 class="carousel-text">astrónoma</h3>
               </div> <!-- carousel-caption-->
             </div> <!-- item-->
 
             <div class="item">
-              <img src="assets/images/nomad3a.jpg" alt="Viajera">
+              <img src="assets/images/nomad3a.jpg" alt="a viajera">
               <div class="carousel-caption">
                 <h3 class="carousel-text">viajera</h3>
               </div> <!-- carousel-caption-->
             </div> <!-- item-->
 
             <div class="item">
-              <img src="assets/images/travel03a.jpg" alt="Nómade">
+              <img src="assets/images/travel03a.jpg" alt="a nómade">
               <div class="carousel-caption">
                 <h3 class="carousel-text">nómade</h3>
               </div> <!-- carousel-caption-->
             </div> <!-- item-->
-
           </div> <!--carousel inner list-->
 
-          <!---------- CONTROLES DE AVANCE CAROUSEL ---------->
+
+          <!----- Controles izquierda y derecha ------>
 
           <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
+            <span class="sr-only">Previous</span>
           </a>
           <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
+            <span class="sr-only">Next</span>
           </a>
         </div> <!-- div my carousel-->
       </div> <!-- div profile-->
     </section> <!-- section middle-->
 
+    <!---------------- FIN CAROUSEL ------------->
 
-    <!----------------- FIN CAROUSEL ------------------>
-
-    <!----------------- SOBRE MÍ - PÁRRAFO ------------------>
+    <!----------------- SOBRE MÍ - PÁRRAFO --------------->
 
     <section class="about-me">
       <table class="about-me-table">
@@ -206,7 +203,7 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td id="about-me-middle_text">
             Mi viaje profesional me ha llevado desde observar las estrellas hasta programar aplicaciones.
             Esta diversidad de experiencias me aporta una perspectiva apropiada
             para resolver problemas y crear soluciones innovadoras.
@@ -214,28 +211,22 @@
         </tr>
         <tr>
           <td>
-            He buscado y obtenido la oportunidad de trabajar desde diferentes lugares del mundo,
+            He buscado y obtenido la oportunidad de trabajar en diferentes lugares del mundo,
             lo que me ha enseñado a adaptarme rápidamente a nuevos entornos
             y colaborar efectivamente con equipos multiculturales.
 
           </td>
         </tr>
       </table>
-
     </section>
 
-    <!--------------------- DIVISOR ------------------>
-
-    <div class="hr" id="skills-hr">
-      <hr>
-    </div>
-
-
-    <!------------------ SECCIÓN HABILIDADES ---------->
-
+    <!----------------- SECCIÓN HABILIDADES ---------------->
     <section id="skills">
-
-      <h2>Mis conocimientos.</h2>
+      <!--------------------- HR ------------------>
+      <div class="hr" id="skills-hr">
+        <hr>
+      </div>
+      <h2>Mis habilidades.</h2>
 
       <div class="skills-container">
         <div class="skill-item">
@@ -267,19 +258,16 @@
         </div>
       </div>
 
+      <!--------------------- HR ------------------>
+      <div class="hr" id="tech-hr">
+        <hr>
+      </div>
     </section> <!--skills container -->
 
-    <!--------------------- DIVISOR ------------------>
-
-    <div class="hr" id="tech-hr">
-      <hr>
-    </div>
-
-
-    <!--------------- SECCIÓN TECNOLOGIAS ------------------>
+    <!--------------- TECNOLOGIAS  -------------->
 
     <section id="technologies" class="tech-section">
-      <h2>Tecnologías que manejo.</h2>
+      <h2>Tecnologías que manejo</h2>
 
       <div id="myCanvasContainer">
         <canvas width="600" height="500" id="myCanvas">
@@ -301,23 +289,24 @@
               <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/Jira80.png"></a></li>
               <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/Kotlin.png"></a></li>
               <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/vsc.png"></a></li>
-              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/MySQL80.png"></a></li>
               <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/php.png"></a></li>
+              <!-- <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/MySQLinverso.png"></a></li> -->
+              <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/MySQL80.png"></a></li>
               <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/react80.png"></a></li>
               <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/trello.png"></a></li>
               <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/VS.png"></a></li>
               <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/node.png"></a></li>
-
             </ul>
           </div>
         </canvas>
       </div> <!-- MyCanvascontainer-->
 
+
       <table class="tech-table">
         <thead>
           <tr>
-            <th>Categoría</th>
-            <th>Tecnologías</th>
+            <th>Categorías</th>
+            <th>Technologías</th>
             <th>Nivel</th>
           </tr>
         </thead>
@@ -325,55 +314,53 @@
           <tr>
             <td class="tech-category">Frontend</td>
             <td class="tech-description">HTML5, CSS3, JavaScript <br> Kotlin (Android) </td>
-            <td class="tech-description">Intermedio</td>
+            <td class="tech-description">Junior</td>
           </tr>
           <tr>
             <td class="tech-category">Backend</td>
             <td class="tech-description">Node.js, PHP, Python</td>
-            <td class="tech-description">Intermedio</td>
+            <td class="tech-description">Trainee / Junior</td>
           </tr>
           <tr>
             <td class="tech-category">Databases</td>
             <td class="tech-description">MongoDB, MySQL </td>
-            <td class="tech-description">Básico - Intermedio</td>
+            <td class="tech-description">Trainee / Junior</td>
           </tr>
           <tr>
             <td class="tech-category">Languages</td>
             <td class="tech-description">C#, C++, Java, Assembly</td>
-            <td class="tech-description">Básico - Intermedio</td>
+            <td class="tech-description">Trainee</td>
           </tr>
           <tr>
             <td class="tech-category">Tools</td>
             <td class="tech-description">Git, VS Code, VS, Figma, Jira, Trello, Android Studio</td>
-            <td class="tech-description">Intermedio</td>
+            <td class="tech-description">Trainee / Junior</td>
           </tr>
         </tbody>
       </table>
-
+      <!--------------------- HR ------------------>
+      <div class="hr" id="repo-hr">
+        <hr>
+      </div>
     </section>
 
-    <!--------------------- DIVISOR ------------------>
-    <div class="hr" class="repo-hr">
-      <hr>
-    </div>
 
     <!--------- MUESTRA REPOSITORIOS EN GRID ---------->
     <!-- Próximamente: Rehacer con React -->
 
     <section id="repositories-main">
 
-      <div id="repos-contenedor">
+      <div id="repos-contenedor" class="repos-container">
 
-        <div class="section-title">
+        <div class="section-title" id="repos-sample">
           <h2>Mis repositorios</h2>
           <h3 class="sample">
-            Esta es una muestra. Para ver todos, puede hacer<a href="./repos-sp.html" class="pro2">click aquí</a>
+            Esta es una muestra. Para ver todos, puede hacer<a href="https://github.com/Alexa-2k?tab=repositories"
+              class="pro2">click aquí</a>
           </h3>
-
         </div>
 
         <div class="repos-main container">
-
           <div class="repo-card">
             <div class="card-img">
               <img class="repo-img" src="assets/images/repos/conferencia.png">
@@ -388,24 +375,26 @@
               <a href="https://github.com/Alexa-2k/ConferenciaBA/blob/main/README.md" target="_blank"> <button
                   class="more">Repositorio</button></a>
             </div>
-          </div>
+          </div> <!-- repo-card -->
+
 
           <div class="repo-card">
             <div class="card-img">
               <img class="repo-img" src="assets/images/repos/tienda-cafe.png">
             </div>
             <div class="card-title">
-              <h3> Tienda de Café </h3>
+              <h3> Tienda de café </h3>
             </div>
             <div class="card-txt-div">
-              <p class="card-txt"> Desarrollo Frontend - Clon de sitio </p>
-              <p class="card-txt"> En construcción </p>
+              <p class="card-txt"> Desarrollo Frontend - Clon de sitio web</p>
             </div>
             <div>
               <a href="https://github.com/Alexa-2k/Tienda_de_Cafe-Clone/blob/main/README.md" target="_blank"> <button
                   class="more">Repositorio</button></a>
             </div>
           </div> <!-- repo-card -->
+
+
 
           <div class="repo-card">
             <div class="card-img">
@@ -415,11 +404,10 @@
               <h3> CAC Movies </h3>
             </div>
             <div class="card-txt-div">
-              <p class="card-txt"> Desarrollo FullStack - Site de películas online </p>
-              <p class="card-txt"> En construcción </p>
+              <p class="card-txt"> Desarrollo FullStack - Site de películas online</p>
             </div>
             <div>
-              <a href="https://github.com/Alexa-2k/CaC_Movies-JAVA?tab=readme-ov-file" target="_blank"> <button
+              <a href="https://github.com/Alexa-2k/CaC_Movies-JAVA/blob/main/README.md" target="_blank"> <button
                   class="more">Repositorio</button></a>
             </div>
           </div> <!-- repo-card -->
@@ -446,7 +434,7 @@
               <img class="repo-img" src="assets/images/repos/JS-ej.png">
             </div>
             <div class="card-title">
-              <h3> JS - ejercicios</h3>
+              <h3> Ejercicios JS </h3>
             </div>
             <div class="card-txt-div">
               <p class="card-txt"> Prácticas de JS volcadas a página web- Codo a codo 2022. </p>
@@ -465,8 +453,8 @@
               <h3> Mini Alura</h3>
             </div>
             <div class="card-txt-div">
-              <p class="card-txt"> Sitio responsive para plataforma de cursos online, basado en diseño provisto. Oracle
-              </p>
+              <p class="card-txt"> Sitio responsivo para plataforma de cursos online, basado en diseño provisto. Oracle
+                Next Education</p>
             </div>
             <div>
               <a href="https://github.com/Alexa-2k/Mini_Alura/blob/main/README.md" target="_blank"> <button
@@ -546,7 +534,7 @@
               <h3> Barbería</h3>
             </div>
             <div class="card-txt-div">
-              <p class="card-txt">Sitio web para barbería ficticia. Oracle ONE </p>
+              <p class="card-txt"> Sitio web para barbería ficticia. Oracle ONE </p>
             </div>
             <div>
               <a href="https://github.com/Alexa-2k/Barberia/blob/main/README.md" target="_blank"> <button
@@ -576,7 +564,7 @@
               <img class="repo-img" src="assets/images/repos/televisor.png">
             </div>
             <div class="card-title">
-              <h3> Control remoto de TV - C#</h3>
+              <h3> Control remoto de TV- C#</h3>
             </div>
             <div class="card-txt-div">
               <p class="card-txt"> POO en C# - B.S. Tecnicatura superior en Desarrollo de Software </p>
@@ -603,35 +591,35 @@
             </div>
           </div>
 
+
           <div class="repo-card">
             <div class="card-img">
               <img class="repo-img" src="assets/images/repos/JS-PFO.png">
             </div>
             <div class="card-title">
-              <h3> Javascript + Console</h3>
+              <h3> Javascript + Consola</h3>
             </div>
             <div class="card-txt-div">
-              <p class="card-txt"> Javascript y console log ejercicios iniciales</p>
+              <p class="card-txt"> Javascript y console log. Ejercicios iniciales</p>
             </div>
             <div>
               <a href="https://github.com/Alexa-2k/FrontEnd_PFO2-JS" target="_blank"> <button
-                  class="more">Repository</button></a>
+                  class="more">Repositorio</button></a>
             </div>
           </div>
-        </div>
+        </div> <!-- repos main container -->
       </div><!--repos-contenedor-->
-      </div><!-- repos main container -->
 
+
+      <!--------------------- HR ------------------>
+
+      <div class="hr" id="hobbies-hr">
+        <hr>
+      </div>
     </section> <!--repositories-main-->
 
-    <!--------------------- DIVISOR ------------------>
-    
-    <div class="hr" id="hobbies-hr">
-      <hr>
-    </div>
 
-    <!--------------------- HOBBIES ------------------>
-  
+    <!-------------------- HOBBIES -------------------->
     <section id="hobbies-container">
       <div class="section-title">
         <h2>Mis Hobbies.</h2>
@@ -646,20 +634,16 @@
       <img class="hobby-img" src="assets/images/cooking.png" alt=" Cooking icons created by mangsaabguru - Flaticon">
       <img class="hobby-img" src="assets/images/cake-decoration.png" alt="Pastry icons created by Freepik - Flaticon">
       <img class="hobby-img" src="assets/images/piano-ico.png" alt="Piano icon created by Freepik - Flaticon">
-
       <h3>Esto es lo que <span class="pro2">adoro</span> hacer en mi tiempo libre.</h3>
       <p class="hobbies-txt">Observación astronómica -con mis telescopios- viajar, coleccionar herramientas y arreglar
         cosas, hacer jardinería, cocinar, decorar tortas y tocar el piano.</p>
 
+
+      <!--------------------- HR ------------------>
+      <div class="hr" id="contact-hr">
+        <hr>
+      </div>
     </section> <!--hobbies-container-->
-
-
-    <!--------------------- DIVISOR ------------------>
-
-    <div class="hr" id="contact-hr">
-      <hr>
-    </div>
-
 
     <!--------------- FORMULARIO DE CONTACTO --------->
     <!-- Falta darle funcionalidad -->
@@ -684,34 +668,17 @@
             <input type="radio" class="rd_wap" name="contact" value="whatsapp">
             <label for="rd_wap">WhatsApp</label>
           </div>
-          <br><br>
         </section>
-
         <textarea class="form_field message" name="message" placeholder="Mensaje"></textarea>
-        <input class="form_btn" type="submit" name="Contact Me" value="Contacto">
-        <input class="form_btn" type="reset" name="Borrar info" value="Reset">
+        <div id="form-btns">
+          <button class="form_btn more" type="button">Contacto</button>
+          <input class="form_btn more" type="reset" name="Borrar info" value="Reset">
+        </div>
       </form>
-
     </section>
 
-
-    <!------------------ PIE DE PAGINA -------------------->
-    <footer>
-
-      <a href="https://www.linkedin.com/in/lorena-rachich/" target="_blank">
-        <img src="assets/images/linkedin.png" alt="LinkedIn"> </a>
-
-      <a href="https://twitter.com/Alexa_2k" target="_blank">
-        <img src="assets/images/X_logo.png" alt="Twitter">
-      </a>
-
-      <a href="https://github.com/Alexa-2k" target="_blank">
-        <img src="assets/images/git.png" alt="Github"> </a>
-      <p class="copyright-me">© 2024 Lorena Rachich.</p>
-
-    </footer>
-
-
+    <!------------------ FOOTER -------------------->
+    <div id="footer"></div>
     <!--------------------- JAVASCRIPT ------------------>
 
     <script src="./js/script.js"></script>

@@ -35,7 +35,7 @@ Puede verse una versión en vivo de este portafolio aquí:
 * **(Opcional) JavaScript:** Utilizado para la funcionalidad del menú hamburguesa (mostrar/ocultar).
 
 ## Nota:
-* **Las páginas anexas, online-sp, online-en, schedule, register, repos_sp y repos-en están en desarrollo. No forman parte del trabajo práctico. Estoy ideando un proyecto personal a partir de este desarrollo. 
+* **Las páginas anexas, online-sp, online-en, schedule, register están en desarrollo. No forman parte del trabajo práctico. Estoy ideando un proyecto personal a partir de este desarrollo. 
 
 ## 📂 Estructura del Proyecto
 ![Estructura](assets/images/Estructura.png)
@@ -44,3 +44,5 @@ Puede verse una versión en vivo de este portafolio aquí:
 ## Muestra del Portafolio
 
 ![Muestra del Portafolio](assets/images/sample.png)
+
+![Muestra del Portafolio](assets/images/sample2.png)
