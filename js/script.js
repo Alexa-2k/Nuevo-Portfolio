@@ -69,5 +69,5 @@ function incluirHTML(id, archivo) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	incluirHTML("footer", "../components/footer.html");
+	incluirHTML("footer", "./components/footer.html");
 });
