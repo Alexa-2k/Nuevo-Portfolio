@@ -1412,7 +1412,6 @@ footer {
     font-size: 1.6rem;
   }
 
-
   .mobile-cards {
     display: none;
   }
@@ -1557,7 +1556,6 @@ footer {
 
   .tech-card {
     width: 98%;
-    border: var(--medium-dark-text-color) solid 1px;
     border-radius: 8px;
     box-shadow: var(--lite-mode-shadow);
     margin: 1rem auto;
@@ -1566,6 +1564,8 @@ footer {
 
   .tech-category {
     font-weight: 600 !important;
+    color: var(--medium-dark-text-color) !important;
+    text-align: left;
   }
 
   .tech-level {
@@ -1694,7 +1694,6 @@ footer {
 
   .tech-card {
     width: 98%;
-    border: var(--medium-dark-text-color) solid 1px;
     border-radius: 8px;
     box-shadow: var(--lite-mode-shadow);
     margin: 1rem auto;

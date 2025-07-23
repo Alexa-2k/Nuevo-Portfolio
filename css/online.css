@@ -55,7 +55,7 @@
     /* Hasta 4 por fila con gap incluido */
     max-width: calc(25% - 2rem);
     min-width: 260px;
-    height: auto;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,7 +120,12 @@
 
 .btn {
     margin: 5% auto;
-    font-size: 1.7rem;
+    font-size: 1rem;
+}
+
+.classes {
+    font-size: 1.2rem !important;
+    font-weight: 600;
 }
 
 #schedule {
