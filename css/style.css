@@ -288,7 +288,7 @@ body.light-mode .more:hover {
 }
 
 body.light-mode .contact-p {
-  font-color: var(--dark-text-color);
+  color: var(--dark-text-color);
 }
 
 /* =========== FRONT PAGE & ANIMATIONS ========== */
