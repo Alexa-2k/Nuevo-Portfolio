@@ -19,8 +19,8 @@
   /* #c9b278; */
   --color-gray: #63615d;
   /* #878580; */
-  --dark-text-color:#60553c;
-  --medium-dar-text-color:#81734f;
+  --dark-text-color: #60553c;
+  --medium-dark-text-color: #81734f;
   --about-me-p: #555;
   --dark-mode-gradient: linear-gradient(to bottom, #333333d9, #000000d9), url(../assets/images/bckgd.jpg);
   --dark-mode-inverse: linear-gradient(to top, #333333d9, #000000d9), url(../assets/images/bckgd.jpg);
@@ -138,7 +138,7 @@ body.dark-mode .about-me {
 }
 
 body.dark-mode .about-me-table {
-  background-color: #222222dd; 
+  background-color: #222222dd;
   /* #c9b278dd; */
 }
 
@@ -233,7 +233,7 @@ body.light-mode .about-me-table {
 }
 
 body.light-mode .about-me-table td {
-  color: var(--dark-text-color) ;
+  color: var(--dark-text-color);
   font-weight: 500;
 
 }
@@ -287,6 +287,10 @@ body.light-mode .more:hover {
   color: var(--light-h2h3);
 }
 
+body.light-mode .contact-p {
+  font-color: var(--dark-text-color);
+}
+
 /* =========== FRONT PAGE & ANIMATIONS ========== */
 .top_container {
   position: fixed;
@@ -321,6 +325,7 @@ h1 {
   color: var(--main-h1h2-color);
   font-weight: 400;
 }
+
 h2 {
   font-family: var(--main-font);
   font-size: 3.5rem;
@@ -451,7 +456,7 @@ td {
 }
 
 
-.names::after{
+.names::after {
   content: "  Lore.";
   margin-left: 5px;
 }
@@ -817,6 +822,70 @@ nav a {
   padding: 0 1rem;
 }
 
+.skill-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--a-font-color);
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(100, 100, 100, 0.5);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  /* previene desbordes generales */
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.skill-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.skill-img {
+  max-width: 30%;
+  object-fit: contain;
+  flex-shrink: 1;
+}
+
+.skill-content {
+  flex: 1;
+  min-width: 0;
+  /* evita que se rompa el layout en flexbox */
+  text-align: left;
+  background-color: transparent;
+}
+
+.skill-content h3 {
+  margin: 0 0 1rem 0;
+}
+
+.skill-content p {
+  margin: 0;
+  color: var(--a-font-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* 
+#skills {
+  padding: 2rem 0;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 70%;
+  margin: 6cap auto;
+  padding: 0 1rem;
+}
+
 
 .skill-item {
   display: flex;
@@ -839,10 +908,9 @@ nav a {
 }
 
 .skill-img {
-  width: 100px;
-  height: 100px;
+  max-width: 30%;
   object-fit: contain;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .skill-content {
@@ -862,7 +930,7 @@ nav a {
   color: var(--a-font-color);
 }
 
-
+ */
 /*================= TECHNOLOGIES ================*/
 #technologies {
   max-width: 90%;
@@ -911,20 +979,20 @@ nav a {
   transition: all 0.3s ease;
 }
 
-
 .tech-category {
   font-weight: bold;
   color: #c9b278;
   width: 25%;
 }
 
+.mobile-cards {
+  display: none;
+}
 
 /* ==============================CANVAS ===============================*/
 
 #myCanvasContainer {
-
   display: inline-block;
-
 }
 
 /* ================== HOBBIES ================ */
@@ -1234,7 +1302,6 @@ footer {
 }
 
 
-
 /*=================== MEDIA QUERIES ================*/
 
 /*------ Tablet horizontal ------*/
@@ -1252,7 +1319,7 @@ footer {
   }
 
   .carousel {
-    width: 90%;
+    width: 99%;
   }
 
   .carousel-indicators {
@@ -1267,6 +1334,14 @@ footer {
     padding: 0;
   }
 
+  canvas {
+    max-width: 99%;
+    height: auto;
+  }
+
+  .mobile-cards {
+    display: none;
+  }
 
   .contact-me form {
     width: 80%;
@@ -1346,9 +1421,36 @@ footer {
     font-size: 2.5rem;
   }
 
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
   .pro {
     margin-right: -3px;
   }
+
+  canvas {
+    max-width: 99%;
+    height: auto;
+  }
+
+  .tech-table {
+    max-width: 100%;
+  }
+
+  .tech-table td {
+    font-size: 1.6rem;
+  }
+
+
+  .mobile-cards {
+    display: none;
+  }
+
 
   .contact-me form {
     width: 90%;
@@ -1417,7 +1519,11 @@ footer {
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
   }
 
   nav ul {
@@ -1447,7 +1553,39 @@ footer {
     left: 0%;
     bottom: 0;
     padding: 0;
+    font-size: 1.8rem;
   }
+
+  .skill-item {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .skill-img {
+    max-width: 60%;
+  }
+
+  .skill-content {
+    text-align: center;
+  }
+
+  canvas {
+    max-width: 99%;
+    height: auto;
+  }
+
+  .tech-table {
+    display: none;
+  }
+
+  .mobile-cards {
+    display: block;
+  }
+
+  .tech-card {
+    border: var(--medium-dark-text-color) solid 2px;
+  }
+
 
   .contact-me form {
     width: 90%;
@@ -1514,6 +1652,14 @@ footer {
     font-size: 2.2rem;
   }
 
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+
   .carousel img {
     height: auto;
     width: 100%
@@ -1537,6 +1683,23 @@ footer {
 
   nav ul {
     padding: 5px;
+  }
+
+  .tech-table {
+    display: none;
+  }
+
+  canvas {
+    max-width: 99%;
+    height: auto;
+  }
+
+  .tech-table {
+    display: none;
+  }
+
+  .mobile-cards {
+    display: block;
   }
 
   .contact-me form {

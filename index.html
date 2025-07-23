@@ -22,7 +22,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&&family=Sacramento&display=swap"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&&family=Sacramento&display=swap"
       rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,7 +50,7 @@
         <img class="animate__animated animate__bounceInRight top_cloud" src="assets/images/cloud1.png" alt="cloud-img">
         <img class="animate__animated animate__bounceInLeft bottom_cloud" src="assets/images/cloud2.png"
           alt="cloud-img">
-        <h1 class="brillo ">I'm  <span class ="brillo names"></span></h1>
+        <h1 class="brillo ">I'm <span class="brillo names"></span></h1>
         <h2 class="animate__animated animate__bounceInRight programmer">a <span
             class=" inblock animate__animated animate__bounceInUp, animate__rubberBand pro">pro</span> <span
             class="inblock animate__animated animate__bounceInRight programmer">grammer.</span></h2>
@@ -256,6 +257,7 @@
           </div>
         </div>
       </div>
+
       <!--------------------- HR ------------------>
       <div class="hr" id="tech-hr">
         <hr>
@@ -268,7 +270,7 @@
       <h2>Technologies I work with</h2>
 
       <div id="myCanvasContainer">
-        <canvas width="600px" height="500px" id="myCanvas">
+        <canvas width="900px" height="500px" id="myCanvas">       
           <div id="tags">
             <ul>
               <li><a href="#technologies" target="_blank"><img src="./assets/images/techs/html80.png"></a></li>
@@ -336,10 +338,43 @@
           </tr>
         </tbody>
       </table>
-      <!--------------------- HR ------------------>
-      <div class="hr" id="repo-hr">
-        <hr>
-      </div>
+
+      <!-- Cards for mobile -->
+      <div class="mobile-cards">
+        <div class="tech-card">
+          <p class=" tech-category"> Frontend</p>
+          <p class="tech-used"><strong>Technologies: </strong> HTML5, CSS3, JavaScript <br> Kotlin (Android)</p>
+          <p class="tech-level"><strong>Level: </strong> Junior</p>
+        </div>
+        <div class="tech-card">
+          <p class=" tech-category"> Backend</p>
+          <p class="tech-used"><strong>Technologies:</strong> Node.js, PHP, Python</p>
+          <p class="tech-level"><strong>Level: </strong> Trainee / Junior</p>
+        </div>
+
+        <div class="tech-card">
+          <p class="tech-category" Databases</pp>
+          <p class="tech-used"><strong>Technologies: </strong> MongoDB, MySQL </p>
+          <p class="tech-level"><strong>Level: </strong> Trainee / Junior</p>
+
+          <div class="tech-card">
+            <p class="tech-category"> Languages</p>
+            <p class="tech-used"><strong>Technologies: </strong> C#, C++, Java, Assembly</p>
+            <p class="tech-level"><strong>Level: </strong> Trainee</p>
+          </div>
+
+          <div class="tech-card">
+            <p class="tech-category" Tools </pp>
+            <p class="tech-used"><strong>Technologies: </strong> Git, VS Code, VS, Figma, Jira, Trello, Android Studio</p>
+            <p class="tech-level" ><strong>Level: </strong> Junior</p>
+          </div>
+        </div>
+
+
+        <!--------------------- HR ------------------>
+        <div class="hr" id="repo-hr">
+          <hr>
+        </div>
     </section>
 
 
@@ -634,7 +669,7 @@
       <p class="hobbies-txt">Stargazing with my own telescopes, traveling, collecting tools and fixing things,
         gardening, cooking, decorating cakes and playing the piano.</p>
 
-    <!---------------------  ------------------>
+      <!---------------------  ------------------>
       <div class="hr" id="contact-hr">
         <hr>
       </div>
@@ -653,16 +688,16 @@
         <input class="form_field email" type="email" name="email" placeholder="Your e-mail">
 
         <section id="contact_type">
-          <p>How would you prefer to be contacted?</p>
+          <p class="contact-p">How would you prefer to be contacted?</p>
 
           <div class="radio-option">
             <input type="radio" class="rd_mail" name="contact" value="email">
-            <label for="rd_mail">E-mail</label>
+            <label for="rd_mail" class="contact-p">E-mail</label>
           </div>
 
           <div class="radio-option">
             <input type="radio" class="rd_wap" name="contact" value="whatsapp">
-            <label for="rd_wap">WhatsApp</label>
+            <label for="rd_wap" class="contact-p">WhatsApp</label>
           </div>
         </section>
         <textarea class="form_field message" name="message" placeholder="Your message"></textarea>
