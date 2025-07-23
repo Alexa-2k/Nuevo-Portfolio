@@ -148,7 +148,7 @@ body.dark-mode .about-me-table td {
   letter-spacing: 0.5px;
 }
 
-body.dark-mode  #about-me-middle_text {
+body.dark-mode #about-me-middle_text {
   color: #c9b278;
   font-weight: 600;
   letter-spacing: 0.6px;
@@ -296,7 +296,9 @@ body.light-mode .more:hover {
 }
 
 body.light-mode .contact-p {
+  font-family: var(--main-font);
   color: var(--medium-dark-text-color) !important;
+  font-size: 1.6rem;;
 }
 
 /* =========== FRONT PAGE & ANIMATIONS ========== */
@@ -345,6 +347,13 @@ h3 {
   font-family: var(--main-font);
   color: var(--light-h2h3);
   font-weight: 600;
+}
+
+h4 {
+  font-family: var(--main-font);
+  color: var(--medium-dark-text-color);
+  font-size: 1.9rem;
+  font-weight: 500;
 }
 
 p {
@@ -1022,7 +1031,7 @@ nav a {
 #contact_type {
   margin-bottom: 1.5rem;
   text-align: center;
-  width: 35%;
+  width: 55%;
 }
 
 #contact_type p {
@@ -1207,7 +1216,7 @@ footer {
 .more {
   background-color: transparent;
   color: var(--light-h2h3);
-  font-family: "Helvetica lightweight", sans-serif;
+  font-family: var(--main-font);
   padding: 1rem;
   border-color: var(--a-font-color);
   border-radius: 8px;
