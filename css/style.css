@@ -816,6 +816,7 @@ nav a {
 .skills-container {
   display: flex;
   flex-direction: column;
+  align-self: auto;
   gap: 5rem;
   max-width: 70%;
   margin: 6cap auto;
