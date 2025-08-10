@@ -26,7 +26,13 @@
 
 
 .grid-container {
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 20px;
+    justify-content: center;;
+    
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
@@ -36,13 +42,13 @@
     overflow-x: auto;
     min-height: 35rem;
     padding: 2rem 0;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
-
 
 
 .section-title {
     position: relative;
+    margin: 2rem auto;
 }
 
 .sample {
@@ -51,15 +57,17 @@
 
 
 .online-card {
-    flex: 1 1 calc(25% - 2rem);
     /* Hasta 4 por fila con gap incluido */
+    /* flex: 1 1 calc(25% - 2rem);
     max-width: calc(25% - 2rem);
     min-width: 260px;
     height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
+    text-align: center; */
+    width: 300px;
+    height: 400px;
     border: 2px solid lightgray;
     border-radius: 10px;
     padding: 0.5rem;
@@ -93,7 +101,7 @@
 }
 
 .card-txt-div {
-    height: 7rem;
+    height: 5rem;
     padding: 0 0.5rem;
 }
 
@@ -101,49 +109,51 @@
     font-family: "Calibri light", sans-serif;
     font-size: small;
     font-weight: lighter;
-    line-height: 1.5;
+    line-height: 1rem;
 }
 
 .card-title {
-    height: 6rem;
+    height: 4.5rem;
     margin-top: 1rem;
 }
 
-/* .more {
-    background-color: transparent;
+ .more {
+ padding: 0.5rem 1rem;
+ 
+ /*   background-color: transparent;
     border-color: var(--glow-color);
     color: var(--glow-color);
     font-family: "Helvetica lightweight", sans-serif;
     padding: 0.5rem;
-    border-radius: 10px;
-} */
+    border-radius: 10px;*/
+} 
 
 .btn {
-    margin: 5% auto;
+    margin: 2% auto;
     font-size: 1rem;
 }
 
 .classes {
-    font-size: 1.2rem !important;
-    font-weight: 600;
+    font-size: 1rem !important;
+    font-weight: 400;
 }
 
 #schedule {
-    margin: 4rem auto;
+    margin: 0 auto;
 }
 
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     .online-card {
         flex: 1 1 calc(25% - 2rem);
         max-width: calc(25% - 2rem);
     }
 }
-
+*/
 /* Responsive para móviles */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
     .online-card {
         flex: 1 1 100%;
         max-width: 100%;
     }
-}
+} */

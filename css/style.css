@@ -809,17 +809,20 @@ nav a {
   font-family: var(--main-font);
   text-align: left;
   white-space: pre-line;
+  text-wrap: pretty;
 }
 
 
 .about-me-table tr:nth-child(2) td {
   text-align: right;
   white-space: pre-line;
+  text-wrap: pretty;
 }
 
 .about-me-table tr:nth-child(3) td {
   text-align: left;
   white-space: pre-line;
+  text-wrap: pretty;
 }
 
 
@@ -852,6 +855,7 @@ nav a {
   box-shadow: 0 4px 20px rgba(100, 100, 100, 0.5);
   transition: all 0.3s ease;
   overflow: hidden;
+  text-wrap: pretty;
 }
 
 .skill-item:hover {
